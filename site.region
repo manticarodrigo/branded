@@ -14,22 +14,15 @@
       <header class="site-header">
         <!-- site navigation -->
         <squarespace:navigation navigationId="siteNav" template="site-navigation" />
-
-        <!-- site title or logo -->
-        {.section website}
-          <h1 class="site-title-heading" data-content-field="site-title">
-            <a href="/" class="site-title-link">{siteTitle}</a>
-          </h1>
-        {.end}
       </header>
 
       <!-- cms content injection point -->
-      <main class="content-container" role="main" data-content-field="main-content">
+      <main class="container container--max-width" role="main" data-content-field="main-content">
        {squarespace.main-content}
       </main>
 
       <!--Footer with open block field -->
-      <footer class="site-footer">
+      <footer class="site-footer container container--max-width">
         <squarespace:block-field id="footerBlocks" columns="12" />
       </footer>
 

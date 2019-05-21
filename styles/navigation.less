@@ -1,0 +1,49 @@
+.site-header {
+  background-color: #00a880;
+  padding: @padding;
+}
+
+.site-navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+  & > * {
+    flex: 1;
+  }
+
+  &__list {
+    padding: 0;
+  }
+
+  &__item {
+    display: inline-block;
+    font-size: 87.5%;
+
+    & + .site-navigation__item {
+      margin-left: 1em;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: none;
+
+      &:hover {
+        color: #999;
+      }
+    }
+
+    &--active > a {
+      color: #999;
+    }
+  }
+}
+
+.site-logo {
+  text-align: center;
+}
+
+.site-tagline {
+  color: #fff;
+  text-align: right;
+}

@@ -1,8 +1,8 @@
-<nav class="site-navigation">
-  <ul class="site-navigation-list">
+<nav class="site-navigation container container--max-width">
+  <ul class="site-navigation__list">
     {.repeated section items}
 
-      <li class="site-navigation-item {.section active} active-link{.end}">
+      <li class="site-navigation__item {.section active} site-navigation__item--active{.end}">
 
         <!-- collection link -->
         {.section collection}
@@ -20,4 +20,14 @@
 
     {.end}
   </ul>
+
+  <!-- site logo -->
+  {.section website}
+    <h1 class="u-margin-hug site-logo">
+      <a href="/">
+        <img src="/assets/logo.svg" alt={siteTitle} />
+      </a>
+    </h1>
+    <p class="site-tagline">{siteTagLine}</p>
+  {.end}
 </nav>
