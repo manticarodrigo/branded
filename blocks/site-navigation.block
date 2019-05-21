@@ -23,11 +23,9 @@
 
   <!-- site logo -->
   {.section website}
-    <h1 class="u-margin-hug site-logo">
-      <a href="/">
-        <img src="/assets/logo.svg" alt={siteTitle} />
-      </a>
+    <h1 class="u-margin-hug site-logo" data-content-field="site-title">
+      <a href="/"><img src="/assets/logo.svg" alt={siteTitle} /></a>
     </h1>
-    <p class="site-tagline">{siteTagLine}</p>
+    <p class="site-tagline" data-content-field="site-tagline">{siteTagLine}</p>
   {.end}
 </nav>
