@@ -16,6 +16,10 @@
         <squarespace:navigation navigationId="siteNav" template="site-navigation" />
       </header>
 
+      <div class="site-hero">
+        <squarespace:block-field id="siteHero" label="Site Hero" />
+      </div>
+
       <!-- cms content injection point -->
       <main class="container container--max-width" role="main" data-content-field="main-content">
        {squarespace.main-content}
