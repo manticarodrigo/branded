@@ -17,11 +17,14 @@
       </header>
 
       <div class="site-hero">
-        <squarespace:block-field id="siteHero" label="Site Hero" />
+        <squarespace:block-field id="siteHero" label="Hero" />
       </div>
 
       <!-- cms content injection point -->
       <main class="container container--max-width" role="main" data-content-field="main-content">
+        <div class="site-about">
+          <squarespace:block-field id="siteAbout" label="About" />
+        </div>
        {squarespace.main-content}
       </main>
 
