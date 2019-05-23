@@ -1,8 +1,32 @@
-button,
 .btn {
   border: 2px solid @color-primary;
   padding: (@spacing / 2) @spacing;
-  color: @color-primary;
+  font-family: 'ag_book_promedium';
   text-transform: uppercase;
   text-decoration: none;
+  color: @color-primary;
+
+  &:focus,
+  &:hover {
+    color: #fff;
+    background-color: @color-primary;
+  }
+
+  &--lg {
+    padding: @spacing (@spacing * 2);
+  }
+
+  &--secondary {
+    border-color: #fff;
+    color: #fff;
+    background-color: transparent;
+  }
+}
+
+.form {
+
+  &__item {
+    border: 0;
+    padding: (@spacing * .85) @spacing;
+  }
 }

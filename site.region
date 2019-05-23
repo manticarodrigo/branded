@@ -7,39 +7,109 @@
     <!-- include system scripts, page meta, and header code injection -->
     {squarespace-headers}
   </head>
-  <body id="{squarespace.page-id}" class="{squarespace.page-classes}">
+  <body id="{squarespace.page-id}" class="u-background-color-primary {squarespace.page-classes}">
 
-    <div class="site-container">
+    <header>
+      <!-- site navigation -->
+      <squarespace:navigation navigationId="siteNav" template="site-navigation" />
+    </header>
 
-      <header class="site-header">
-        <!-- site navigation -->
-        <squarespace:navigation navigationId="siteNav" template="site-navigation" />
-      </header>
+    <!-- main content -->
+    <main role="main">
 
-      <div class="site-hero">
-        <squarespace:block-field id="siteHero" label="Hero" />
-      </div>
+      <section id="hero" class="u-text-center" style="max-height: 789px;">
+        <img src="/assets/jpgs/hero.jpg" alt="Site Hero" />
+      </section>
 
-      <!-- main content -->
-      <main class="container container--max-width" role="main">
-        <div class="u-padding--md site-about container container--space-evenly">
-          <div class="u-padding--md site-about__headline">
-            <h3 class="u-margin-hug u-color-primary h1">Same products,<br>lower prices.<br>No frills.</h3>
+      <section id="about">
+        <div class="u-background-color-white u-padding-top--lg u-padding-bottom--lg container container--max-width container--space-evenly">
+          <div class="u-padding--lg">
+            <h2 class="u-margin-hug u-color-primary h1">Same products,<br>lower prices.<br>No frills.</h2>
           </div>
-          <div class="u-padding--md site-about__description">
-            <p>We believe the amazing benefits of cannabis should be accessible by more people. Branded was created with a no frills approach with the intention of offering the same quality cannabis products at affordable prices.</p>
-            <p>Branded has everything for those seeking to get the benefits of cannabis for what it should cost.</p>
-            <a class="u-margin-top--md btn" href="/products">Our Products</a>
+          <div class="u-padding--lg">
+            <p class="u-text-md">We believe the amazing benefits of cannabis should be accessible by more people. Branded was created with a no frills approach with the intention of offering the same quality cannabis products at affordable prices.</p>
+            <p class="u-margin-bottom--lg u-text-md">Branded has everything for those seeking to get the benefits of cannabis for what it should cost.</p>
+            <a class="btn btn--lg" href="#products">Our Products</a>
           </div>
         </div>
-      </main>
+        <div class="container container--max-width">
+          <div class="u-padding--lg">
+            <img src="/assets/svgs/process.svg" alt="Company Process" />
+          </div>
+        </div>
+      </section>
 
-      <!-- site footer -->
-      <footer class="site-footer container container--max-width">
-        <squarespace:block-field id="footerBlocks" columns="12" />
-      </footer>
+      <section id="products">
+        <div class="u-background-color-white u-padding-top--lg u-padding-bottom--lg container container--max-width">
+          <div class="u-padding--lg u-text-center">
+            <img src="/assets/svgs/ca.svg" alt="CA Icon" />
+            <h2 class="u-color-primary">Our Products</h2>
+            <div class="container container--space-evenly">
+              <div class="container__item">
+                <img src="/assets/jpgs/cannabis-infused-chocolate.jpg" alt="Cannabis Infused Chocolate" />
+                <h4>Chocolate - 100mg</h4>
+                <p>Milk Chocolate | <i class="u-text-sm">10 x 10mg</i></p>
+              </div>
+              <div class="container__item">
+                <img src="/assets/jpgs/tincture.jpg" alt="Tincture" />
+                <h4>Tincture - 100mg</h4>
+                <p>Spice Chai | <i class="u-text-sm">Indica</i></p>
+                <p>Blood Orange | <i class="u-text-sm">Hybrid</i></p>
+                <p>Lemon Honey | <i class="u-text-sm">Sativa</i></p>
+              </div>
+              <div class="container__item">
+                <img src="/assets/jpgs/disposable-vape.jpg" alt="Disposable Vape" />
+                <h4>Disposable Vape - 0.3g</h4>
+                <p>Skywalker | <i class="u-text-sm">Indica</i></p>
+                <p>GSC | <i class="u-text-sm">Hybrid</i></p>
+                <p>Sunday Brunch | <i class="u-text-sm">Hybrid</i></p>
+                <p>Blue Dream | <i class="u-text-sm">Sativa</i></p>
+                <p>Daddy Cool | <i class="u-text-sm">Sativa</i></p>
+              </div>
+              <div class="container__item">
+                <img src="/assets/jpgs/vape-cartridge-half-gram.jpg" alt="Vape Cartridge Half Gram" />
+                <h4>Vape Cartridge - 0.5g</h4>
+                <p>Skywalker | <i class="u-text-sm">Indica</i></p>
+                <p>GSC | <i class="u-text-sm">Hybrid</i></p>
+                <p>Sunday Brunch | <i class="u-text-sm">Hybrid</i></p>
+                <p>Blue Dream | <i class="u-text-sm">Sativa</i></p>
+                <p>Daddy Cool | <i class="u-text-sm">Sativa</i></p>
+              </div>
+              <div class="container__item">
+                <img src="/assets/jpgs/vape-cartridge-gram.jpg" alt="Vape Cartridge Full Gram" />
+                <h4>Vape Cartridge - 1g</h4>
+                <p class="u-text-uppercase">Coming Soon</p>
+              </div>
+              <div class="container__item">
+                <img src="/assets/jpgs/flower-pre-rolls.jpg" alt="Flower Pre-Rolls" />
+                <h4>Flower Pre-Rolls - 3.5g</h4>
+                <p class="u-text-uppercase">Coming Soon</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    </div>
+      <section id="newsletter">
+        <div class="container container--max-width container--space-evenly">
+          <div class="u-padding--lg">
+            <p class="u-color-white u-font-md">THIS IS NOT A NEWSLETTER, JUST EVERYDAY VALUE. STAY UP TO DATE ON ALL BRANDED OFFERS.</p>
+          </div>
+          <div class="u-padding--lg">
+            <form>
+              <input type="email" class="form__item" placeholder="Enter your email" />
+              <button type="submit" class="u-padding-right--md u-padding-left--md btn btn--secondary">Submit</button>
+            </form>
+          </div>
+        </div>
+      <section>
+
+    </main>
+
+    <!-- site footer -->
+    <footer>
+      <squarespace:block-field id="footerBlocks" columns="12" />
+    </footer>
 
     <!-- combo and minify scripts when not logged in -->
     <squarespace:script src="site.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />

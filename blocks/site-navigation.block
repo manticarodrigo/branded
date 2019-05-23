@@ -1,4 +1,4 @@
-<nav class="u-padding site-navigation container container--max-width">
+<nav class="u-padding u-padding-right--md u-padding-left--md site-navigation container container--max-width">
   <ul class="site-navigation__list">
     {.repeated section items}
 
@@ -24,8 +24,8 @@
   <!-- site logo -->
   {.section website}
     <h1 class="u-margin-hug site-logo" data-content-field="site-title">
-      <a href="/"><img src="/assets/logo.svg" alt={siteTitle} /></a>
+      <a href="/"><img src="/assets/svgs/logo.svg" alt={siteTitle} /></a>
     </h1>
-    <p class="site-tagline" data-content-field="site-tagline">{siteTagLine}</p>
+    <p class="u-text-sm site-tagline" data-content-field="site-tagline">{siteTagLine}</p>
   {.end}
 </nav>

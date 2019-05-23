@@ -1,3 +1,31 @@
+.u-text-center {
+  text-align: center;
+}
+
+.u-text-uppercase {
+  text-transform: uppercase;
+}
+
+.u-text-sm {
+  font-size: .875em;
+}
+
+.u-text-lg {
+  font-size: 2em;
+}
+
+.u-text-md {
+  font-size: 1.4em;
+}
+
+.u-font-md {
+  font-family: 'ag_book_promedium';
+}
+
+.u-fullwidth {
+  width: 100%;
+}
+
 .u-margin {
 
   &-hug {
@@ -12,6 +40,18 @@
       margin-top: @spacing * 2;
     }
   }
+
+  &-bottom {
+    margin-bottom: @spacing;
+
+    &--md {
+      margin-bottom: @spacing * 2;
+    }
+
+    &--lg {
+      margin-bottom: @spacing * 4;
+    }
+  }
 }
 
 .u-padding {
@@ -19,6 +59,42 @@
 
   &--md {
     padding: @spacing * 2;
+  }
+
+  &--lg {
+    padding: @spacing * 4;
+  }
+
+  &-top {
+    padding-top: @spacing;
+
+    &--md {
+      padding-top: @spacing * 2
+    }
+
+    &--lg {
+      padding-top: @spacing * 4;
+    }
+  }
+
+  &-right {
+    padding-right: @spacing;
+
+    &--md {
+      padding-right: @spacing * 2
+    }
+  }
+
+  &-bottom {
+    padding-bottom: @spacing;
+
+    &--md {
+      padding-bottom: @spacing * 2
+    }
+
+    &--lg {
+      padding-bottom: @spacing * 4;
+    }
   }
 
   &-left {
@@ -34,5 +110,20 @@
 
   &-primary {
     color: @color-primary;
+  }
+
+  &-white {
+    color: #fff;
+  }
+}
+
+.u-background-color {
+
+  &-primary {
+    background-color: @color-primary;
+  }
+
+  &-white {
+    background-color: #fff;
   }
 }
