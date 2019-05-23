@@ -23,7 +23,7 @@
 
   <!-- site logo -->
   {.section website}
-    <h1 class="u-margin-hug site-logo" data-content-field="site-title">
+    <h1 class="u-margin-hug u-line-height--none site-logo" data-content-field="site-title">
       <a href="/"><img src="/assets/svgs/logo.svg" alt={siteTitle} /></a>
     </h1>
     <p class="u-text-sm site-tagline" data-content-field="site-tagline">{siteTagLine}</p>
