@@ -1,4 +1,4 @@
-<nav class="site-navigation container container--max-width">
+<nav class="u-padding site-navigation container container--max-width">
   <ul class="site-navigation__list">
     {.repeated section items}
 

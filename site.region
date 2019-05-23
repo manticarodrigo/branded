@@ -20,15 +20,21 @@
         <squarespace:block-field id="siteHero" label="Hero" />
       </div>
 
-      <!-- cms content injection point -->
-      <main class="container container--max-width" role="main" data-content-field="main-content">
-        <div class="site-about">
-          <squarespace:block-field id="siteAbout" label="About" />
+      <!-- main content -->
+      <main class="container container--max-width" role="main">
+        <div class="u-padding--md site-about container container--space-evenly">
+          <div class="u-padding--md site-about__headline">
+            <h3 class="u-margin-hug u-color-primary h1">Same products,<br>lower prices.<br>No frills.</h3>
+          </div>
+          <div class="u-padding--md site-about__description">
+            <p>We believe the amazing benefits of cannabis should be accessible by more people. Branded was created with a no frills approach with the intention of offering the same quality cannabis products at affordable prices.</p>
+            <p>Branded has everything for those seeking to get the benefits of cannabis for what it should cost.</p>
+            <a class="u-margin-top--md btn" href="/products">Our Products</a>
+          </div>
         </div>
-       {squarespace.main-content}
       </main>
 
-      <!--Footer with open block field -->
+      <!-- site footer -->
       <footer class="site-footer container container--max-width">
         <squarespace:block-field id="footerBlocks" columns="12" />
       </footer>

@@ -1,11 +1,38 @@
-.u-margin-hug {
-  margin: 0;
+.u-margin {
+
+  &-hug {
+    margin: 0;
+
+  }
+
+  &-top {
+    margin-top: @spacing;
+
+    &--md {
+      margin-top: @spacing * 2;
+    }
+  }
 }
 
 .u-padding {
-  padding: @padding;
+  padding: @spacing;
 
   &--md {
-    padding: @padding * 2;
+    padding: @spacing * 2;
+  }
+
+  &-left {
+    padding-left: @spacing;
+
+    &--md {
+      padding-left: @spacing * 2
+    }
+  }
+}
+
+.u-color {
+
+  &-primary {
+    color: @color-primary;
   }
 }
