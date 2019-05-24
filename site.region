@@ -18,13 +18,13 @@
     <main role="main">
 
       <section id="hero">
-        <div class="u-line-height--none container container--max-width">
+        <div class="u-line-height--none container--max-width">
           <img class="u-fullwidth" src="/assets/jpgs/hero.jpg" alt="Site Hero" />
         </div>
       </section>
 
       <section id="about">
-        <div class="u-background-color-white u-padding-top--lg u-padding-bottom--lg container container--max-width container--space-evenly">
+        <div class="u-background-color-white u-padding-top--lg u-padding-bottom--lg container--max-width container--space-evenly">
           <div class="u-padding--lg">
             <h2 class="u-margin-hug u-color-primary h1">Same products,<br>lower prices.<br>No frills.</h2>
           </div>
@@ -34,19 +34,19 @@
             <a class="u-margin-top--md btn btn--lg" href="#products">Our Products</a>
           </div>
         </div>
-        <div class="container container--max-width">
+        <div class="container--max-width">
           <div class="u-padding--lg">
-            <img src="/assets/svgs/process.svg" alt="Company Process" />
+            <img class="u-display-block u-margin-auto u-max-width-md" src="/assets/svgs/process.svg" alt="Company Process" />
           </div>
         </div>
       </section>
 
       <section id="products">
-        <div class="u-background-color-white u-padding-top--lg u-padding-bottom--lg container container--max-width">
+        <div class="u-background-color-white u-padding-top--lg u-padding-bottom--lg container--max-width">
           <div class="u-padding--lg u-text-center">
             <img src="/assets/svgs/ca.svg" alt="CA Icon" />
             <h2 class="u-color-primary">Our Products</h2>
-            <div class="container container--space-evenly">
+            <div class="container--3col">
               <div class="container__item">
                 <img src="/assets/jpgs/cannabis-infused-chocolate.jpg" alt="Cannabis Infused Chocolate" />
                 <h4>Chocolate - 100mg</h4>
@@ -93,13 +93,13 @@
       </section>
 
       <section id="newsletter">
-        <div class="container container--max-width container--space-evenly">
+        <div class="container--max-width container--space-evenly">
           <div class="u-padding--lg">
-            <p class="u-color-white u-font-md">THIS IS NOT A NEWSLETTER, JUST EVERYDAY VALUE. STAY UP TO DATE ON ALL BRANDED OFFERS.</p>
+            <p class="u-margin-left-auto u-color-white u-font-md u-max-width-sm">THIS IS NOT A NEWSLETTER, JUST EVERYDAY VALUE. STAY UP TO DATE ON ALL BRANDED OFFERS.</p>
           </div>
-          <div class="u-padding--lg">
-            <form>
-              <input type="email" class="form__item" placeholder="Enter your email" />
+          <div class="u-margin-auto u-padding--lg">
+            <form class="form form--inline">
+              <input type="email" class="u-margin-right u-flex-grow form__item" placeholder="Enter your email" />
               <button type="submit" class="u-padding-right--md u-padding-left--md btn btn--secondary">Submit</button>
             </form>
           </div>

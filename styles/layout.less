@@ -3,7 +3,7 @@
 
   &--max-width {
     margin: auto;
-    max-width: 1440px;
+    max-width: @breakpoint-lg;
   }
 
   &--space-evenly {
@@ -13,6 +13,17 @@
 
     & > * {
       flex: 1;
+    }
+  }
+
+  &--3col {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @media (max-width: 835px) {
+      justify-content: center;
     }
   }
 

@@ -1,3 +1,10 @@
+.u-display {
+
+  &-block {
+    display: block;
+  }
+}
+
 .u-text-center {
   text-align: center;
 }
@@ -16,6 +23,10 @@
 
 .u-text-md {
   font-size: 1.4em;
+}
+
+.u-flex-grow {
+  flex-grow: 1;
 }
 
 .u-line-height {
@@ -37,11 +48,29 @@
   width: 100%;
 }
 
+.u-max-width {
+
+  &-md {
+    max-width: @breakpoint-md;
+  }
+
+  &-sm {
+    max-width: @breakpoint-sm;
+  }
+}
+
 .u-margin {
+
+  &-auto {
+    margin: auto;
+  }
+
+  &-left-auto {
+    margin-left: auto;
+  }
 
   &-hug {
     margin: 0;
-
   }
 
   &-top {
@@ -49,6 +78,10 @@
 
     &--md {
       margin-top: @spacing * 2;
+    }
+
+    &--lg {
+      margin-top: @spacing * 4;
     }
   }
 
@@ -61,6 +94,18 @@
 
     &--lg {
       margin-bottom: @spacing * 4;
+    }
+  }
+
+  &-right {
+    margin-right: @spacing;
+
+    &--md {
+      margin-right: @spacing * 2;
+    }
+
+    &--lg {
+      margin-right: @spacing * 4;
     }
   }
 }
