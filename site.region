@@ -48,19 +48,19 @@
             <h2 class="u-color-primary">Our Products</h2>
             <div class="container--3col">
               <div class="container__item">
-                <img src="/assets/jpgs/cannabis-infused-chocolate.jpg" alt="Cannabis Infused Chocolate" />
+                <img class="u-fullwidth" src="/assets/jpgs/cannabis-infused-chocolate.jpg" alt="Cannabis Infused Chocolate" />
                 <h4>Chocolate - 100mg</h4>
                 <p><span class="u-font-md">Milk Chocolate |</span> <i class="u-text-sm">10 x 10mg</i></p>
               </div>
               <div class="container__item">
-                <img src="/assets/jpgs/tincture.jpg" alt="Tincture" />
+                <img class="u-fullwidth" src="/assets/jpgs/tincture.jpg" alt="Tincture" />
                 <h4>Tincture - 100mg</h4>
                 <p><span class="u-font-md">Spice Chai |</span> <i class="u-text-sm">Indica</i></p>
                 <p><span class="u-font-md">Blood Orange |</span> <i class="u-text-sm">Hybrid</i></p>
                 <p><span class="u-font-md">Lemon Honey |</span> <i class="u-text-sm">Sativa</i></p>
               </div>
               <div class="container__item">
-                <img src="/assets/jpgs/disposable-vape.jpg" alt="Disposable Vape" />
+                <img class="u-fullwidth" src="/assets/jpgs/disposable-vape.jpg" alt="Disposable Vape" />
                 <h4>Disposable Vape - 0.3g</h4>
                 <p><span class="u-font-md">Skywalker |</span> <i class="u-text-sm">Indica</i></p>
                 <p><span class="u-font-md">GSC | <i class="u-text-sm">Hybrid</i></p>
@@ -69,7 +69,7 @@
                 <p><span class="u-font-md">Daddy Cool |</span> <i class="u-text-sm">Sativa</i></p>
               </div>
               <div class="container__item">
-                <img src="/assets/jpgs/vape-cartridge-half-gram.jpg" alt="Vape Cartridge Half Gram" />
+                <img class="u-fullwidth" src="/assets/jpgs/vape-cartridge-half-gram.jpg" alt="Vape Cartridge Half Gram" />
                 <h4>Vape Cartridge - 0.5g</h4>
                 <p><span class="u-font-md">Skywalker |</span> <i class="u-text-sm">Indica</i></p>
                 <p><span class="u-font-md">GSC |</span> <i class="u-text-sm">Hybrid</i></p>
@@ -78,12 +78,12 @@
                 <p><span class="u-font-md">Daddy Cool |</span> <i class="u-text-sm">Sativa</i></p>
               </div>
               <div class="container__item">
-                <img src="/assets/jpgs/vape-cartridge-gram.jpg" alt="Vape Cartridge Full Gram" />
+                <img class="u-fullwidth" src="/assets/jpgs/vape-cartridge-gram.jpg" alt="Vape Cartridge Full Gram" />
                 <h4>Vape Cartridge - 1g</h4>
                 <p class="u-text-uppercase"><span class="u-font-md">Coming Soon</span></p>
               </div>
               <div class="container__item">
-                <img src="/assets/jpgs/flower-pre-rolls.jpg" alt="Flower Pre-Rolls" />
+                <img class="u-fullwidth" src="/assets/jpgs/flower-pre-rolls.jpg" alt="Flower Pre-Rolls" />
                 <h4>Flower Pre-Rolls - 3.5g</h4>
                 <p class="u-text-uppercase"><span class="u-font-md">Coming Soon</span></p>
               </div>
