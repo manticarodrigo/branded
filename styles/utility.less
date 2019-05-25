@@ -119,6 +119,14 @@
 
   &--lg {
     padding: @spacing * 4;
+
+    @media (max-width: @breakpoint-sm) {
+      padding: @spacing * 2;
+    }
+
+    @media (max-width: @breakpoint-xs) {
+      padding: @spacing;
+    }
   }
 
   &-top {
