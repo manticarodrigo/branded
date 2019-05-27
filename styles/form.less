@@ -39,6 +39,44 @@ input {
 
   &__item {
     border: 0;
-    padding: (@spacing * .85) @spacing;
+    font-size: 1.1em;
+
+    label {
+      display: block;
+      margin-bottom: 1em;
+      color: #000;
+
+      &::after {
+        content: '*';
+        color: @color-primary;
+      }
+    }
+
+    input,
+    select,
+    textarea {
+      display: block;
+      box-sizing: border-box;
+      border: 1px solid @color-border;
+      border-radius: 0;
+      box-shadow: none;
+      padding: (@spacing * .55) @spacing;
+      width: 100%;
+      height: auto;
+    }
+    
+    select {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      background: #fff url(/assets/svgs/chevron-down.svg);
+      background-repeat: no-repeat;
+      background-position: 98% 50%;
+    }
+
+    textarea {
+      height: 215px;
+      resize: none;
+    }
   }
 }

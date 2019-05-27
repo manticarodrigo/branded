@@ -1,4 +1,4 @@
-<nav role="navigation" class="u-padding u-padding-right--md u-padding-left--md site-navigation container--max-width">
+<nav role="navigation" class="u-padding u-padding-right--md u-padding-left--md site-navigation container--max-width-lg">
   <div class="container">
     <!-- mobile activator -->
     <input type="checkbox" />

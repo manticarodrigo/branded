@@ -18,34 +18,34 @@
     <main role="main">
 
       <section id="hero">
-        <div class="u-line-height--none container--max-width">
+        <div class="u-line-height--none container--max-width-lg">
           <img class="u-fullwidth" src="/assets/jpgs/hero.jpg" alt="Site Hero" />
         </div>
       </section>
 
       <section id="about">
-        <div class="u-background-color-white u-padding-top--lg u-padding-bottom--lg container--max-width container--space-evenly">
-          <div class="u-padding--lg">
+        <div class="u-background-color-white container--max-width-lg container--space-evenly">
+          <div class="u-padding-right container--padding">
             <h2 class="u-margin-hug u-color-primary h1">Same products,<br>lower prices.<br>No frills.</h2>
           </div>
-          <div class="u-padding--lg u-line-height--lg">
+          <div class="u-padding-left u-line-height--lg container--padding">
             <p class="u-text-md">We believe the amazing benefits of cannabis should be accessible by more people. Branded was created with a no frills approach with the intention of offering the same quality cannabis products at affordable prices.</p>
             <p class="u-text-md">Branded has everything for those seeking to get the benefits of cannabis for what it should cost.</p>
             <a class="u-margin-top--md btn btn--lg" href="#products">Our Products</a>
           </div>
         </div>
-        <div class="container--max-width">
-          <div class="u-padding--lg">
-            <img class="u-display-block u-margin-auto u-max-width-md" src="/assets/svgs/process.svg" alt="Company Process" />
+        <div class="container--max-width-lg">
+          <div class="container--padding container--max-width-md">
+            <img class="u-display-block u-margin-auto" src="/assets/svgs/process.svg" alt="Company Process" />
           </div>
         </div>
       </section>
 
       <section id="products">
-        <div class="u-background-color-white u-padding-top--lg u-padding-bottom--lg container--max-width">
-          <div class="u-padding--lg u-text-center">
+        <div class="u-background-color-white container--max-width-lg">
+          <div class="container--padding u-text-center">
             <img src="/assets/svgs/ca.svg" alt="CA Icon" />
-            <h2 class="u-color-primary">Our Products</h2>
+            <h2 class="u-margin-bottom u-color-primary">Our Products</h2>
             <div class="container--3col">
               <div class="container__item">
                 <img class="u-fullwidth" src="/assets/jpgs/cannabis-infused-chocolate.jpg" alt="Cannabis Infused Chocolate" />
@@ -93,21 +93,85 @@
       </section>
 
       <section id="newsletter">
-        <div class="container--max-width container--space-evenly">
-          <div class="u-padding--lg">
-            <p class="u-margin-left-auto u-color-white u-font-md u-max-width-sm">THIS IS NOT A NEWSLETTER, JUST EVERYDAY VALUE. STAY UP TO DATE ON ALL BRANDED OFFERS.</p>
-          </div>
-          <div class="u-margin-auto u-padding--lg">
-            <form class="form form--inline">
-              <input type="email" class="u-margin-right u-flex-grow form__item" placeholder="Enter your email" />
-              <button type="submit" class="u-padding-right--md u-padding-left--md btn btn--secondary">Submit</button>
-            </form>
+        <div class="container--max-width-lg">
+          <div class="container--padding container--max-width-md container--space-evenly">
+            <div class="u-padding">
+              <p class="u-color-white u-font-md u-max-width-sm">THIS IS NOT A NEWSLETTER, JUST EVERYDAY VALUE. STAY UP TO DATE ON ALL BRANDED OFFERS.</p>
+            </div>
+            <div class="u-margin-auto u-padding">
+              <form class="form form--inline">
+                <input type="email" class="u-margin-right u-flex-grow form__item" placeholder="Enter your email" />
+                <button type="submit" class="u-padding-right--md u-padding-left--md btn btn--secondary">Submit</button>
+              </form>
+            </div>
           </div>
         </div>
       <section>
       
       <section id="locate">
-        
+        <div class="u-background-color-white container--max-width-lg">
+          <div class="container--padding">
+            <h2 class="u-margin-bottom u-color-primary u-text-center">Locate Branded</h2>
+            <div class="container--3col">
+              <div class="container__item">
+                <img src="/assets/svgs/building-1.svg" alt="Barc Location" />
+                <h4>Barc</h4>
+                <p>432 S San Vicente Blvd. #100</p>
+                <p>Los Angeles, CA 90048</p>
+              </div>
+              <div class="container__item">
+                <img src="/assets/svgs/building-2.svg" alt="Erba Collective Location" />
+                <h4>Erba Collective</h4>
+                <p>12320 W Pico Blvd.</p>
+                <p>Los Angeles, CA 90064</p>
+              </div>
+              <div class="container__item">
+                <img src="/assets/svgs/building-3.svg" alt="Herbarium Location" />
+                <h4>Herbarium</h4>
+                <p>979 N La Brea Ave.</p>
+                <p>West Hollywood, CA 90038</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="u-background-color-white container--max-width-lg">
+          <div class="u-padding-top container--padding">
+            <h2 class="u-margin-bottom u-color-primary u-text-center">Contact us</h2>
+            <div class="container--max-width-sm">
+              <form class="form">
+                <div class="form__item u-margin-bottom--md">
+                  <label for="contact-type">Inquiry type</label>
+                  <select id="contact-type" name="contact-type" required="required">
+                    <option selected value="general">General Inquiry</option>
+                    <option value="0">First Option</option>
+                    <option value="1">Another Option</option>
+                    <option value="2">One Last Option</option>
+                  </select>
+                </div>
+                <div class="form__item u-margin-bottom--md">
+                  <label for="contact-name">Your Name</label>
+                  <input id="contact-name" name="contact-name" type="text" required="required">
+                </div>
+                <div class="form__item u-margin-bottom--md">
+                  <label for="contact-email">Email</label>
+                  <input id="contact-email" name="contact-email" type="text" required="required">
+                </div>
+                <div class="form__item u-margin-bottom--md">
+                  <label for="contact-dispensary">Dispensary Name</label>
+                  <input id="contact-dispensary" name="contact-dispensary" type="text" required="required">
+                </div>
+                <div class="form__item u-margin-bottom--md">
+                  <label for="contact-message">Message</label>
+                  <textarea id="contact-message" name="contact-message" required="required"></textarea>
+                </div>
+                <button type="submit" class="u-padding-right--md u-padding-left--md btn">Submit Inquiry</button>
+              </form>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 

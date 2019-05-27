@@ -1,9 +1,35 @@
 .container {
   position: relative;
+  
+  &--padding {
+    padding: @spacing * 8;
 
-  &--max-width {
+    @media (max-width: @breakpoint-md) {
+      padding: @spacing * 4;
+    }
+
+    @media (max-width: @breakpoint-sm) {
+      padding: @spacing * 2;
+    }
+
+    @media (max-width: @breakpoint-xs) {
+      padding: @spacing;
+    }
+  }
+
+  &--max-width-lg {
     margin: auto;
     max-width: @breakpoint-lg;
+  }
+
+  &--max-width-md {
+    margin: auto;
+    max-width: @breakpoint-md;
+  }
+
+  &--max-width-sm {
+    margin: auto;
+    max-width: @breakpoint-sm;
   }
 
   &--space-evenly {
@@ -40,7 +66,8 @@
   }
 
   &__item {
-    margin-bottom: 2em;
+    margin-bottom: @spacing * 1.75;
+    padding: @spacing / 2;
     text-align: left;
     line-height: 1;
   }
