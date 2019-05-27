@@ -94,14 +94,18 @@
 
       <section id="newsletter">
         <div class="container--max-width-lg">
-          <div class="container--padding container--max-width-md container--space-evenly">
+          <div class="container--padding container--space-evenly">
             <div class="u-padding">
               <p class="u-color-white u-font-md u-max-width-sm">THIS IS NOT A NEWSLETTER, JUST EVERYDAY VALUE. STAY UP TO DATE ON ALL BRANDED OFFERS.</p>
             </div>
             <div class="u-margin-auto u-padding">
               <form class="form form--inline">
-                <input type="email" class="u-margin-right u-flex-grow form__item" placeholder="Enter your email" />
-                <button type="submit" class="u-padding-right--md u-padding-left--md btn btn--secondary">Submit</button>
+                <div class="u-margin-right u-flex-grow form__item">
+                  <input id="newsletter-email" name="newsletter-email" type="email" placeholder="Enter your email" />
+                </div>
+                <div class="form__item">
+                  <button type="submit" class="u-padding-right--md u-padding-left--md btn btn--secondary">Submit</button>
+                </div>
               </form>
             </div>
           </div>

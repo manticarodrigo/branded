@@ -5,7 +5,7 @@ input {
 .btn {
   display: inline-block;
   border: 2px solid @color-primary;
-  padding: (@spacing * 1.5) @spacing;
+  padding: (@spacing * 1.15);
   font-family: 'ag_book_promedium';
   text-transform: uppercase;
   text-decoration: none;
@@ -35,6 +35,10 @@ input {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    & > .form__item input {
+      height: 100%;
+    }
   }
 
   &__item {
