@@ -32,13 +32,31 @@
     max-width: @breakpoint-sm;
   }
 
-  &--space-evenly {
+  &--2col {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
 
     & > * {
-      flex: 1;
+      box-sizing: border-box;
+      flex-basis: 50%;
+    }
+
+    @media (min-width: @breakpoint-sm) {
+      & > *:first-child {
+        padding-right: @spacing;
+      }
+
+      & > *:last-child {
+        padding-left: @spacing;
+      }
+    }
+
+    @media (max-width: @breakpoint-sm) {
+      & > * {
+        flex-basis: 100%;
+      }
     }
   }
 
