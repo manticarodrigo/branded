@@ -1,0 +1,44 @@
+<footer>
+  <div class="container--max-width-lg">
+    <div class="u-padding-top--lg u-padding-bottom--lg">
+      <div class="u-padding u-text-center">
+        <img src="/assets/svgs/logo.svg" alt="BRANDED Footer Logo" />
+      </div>
+      <div class="u-color-white container--3col container--align-items-center">
+        <div class="u-text-center container__item">
+          <!-- navigation -->
+          <ul class="site-navigation__menu site-navigation__menu--vertical">
+            {.repeated section items}
+              <li class="site-navigation__item {.section active} site-navigation__item--active{.end}">
+                <!-- collection link -->
+                {.section collection}
+                  <a href="{fullUrl}">{navigationTitle}</a>
+                {.end}
+                <!-- external link -->
+                {.section externalLink}
+                  <a href="{url}"{.section newWindow} target="_blank"{.end}>
+                    {title}
+                  </a>
+                {.end}
+              </li>
+            {.end}
+          </ul>
+        </div>
+        <div class="u-text-center container__item">
+          <h4>Customer Service</h4>
+          <p>support@trybranded.com</p>
+          <h4>Press Inquiries</h4>
+          <p>press@trybranded.com</p>
+        </div>
+        <div class="u-text-center container__item">
+          <p>@trybranded</p>
+          <p>#brandedcannabis</p>
+          <p>#thegreenbag</p>
+        </div>
+      </div>
+    </div>
+    <div class="u-padding u-text-center">
+      <p class="u-font-md u-color-white">© 2019 Branded. A Cannabis Company - All rights reserved.</p>
+    </div>
+  </div>
+</footer>
