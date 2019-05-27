@@ -10,7 +10,7 @@
   <body id="{squarespace.page-id}" class="u-background-color-primary {squarespace.page-classes}">
 
     <!-- site navigation -->
-    <squarespace:navigation navigationId="siteNav" template="header-navigation" />
+    <squarespace:navigation navigationId="headerNav" template="header-navigation" />
 
     <!-- main content -->
     <main role="main">
@@ -180,7 +180,7 @@
     </main>
 
     <!-- site footer -->
-    <squarespace:navigation navigationId="siteNav" template="footer-navigation" />
+    <squarespace:navigation navigationId="footerNav" template="footer-navigation" />
 
     <!-- combo and minify scripts when not logged in -->
     <squarespace:script src="site.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
