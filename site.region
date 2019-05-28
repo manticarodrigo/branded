@@ -99,7 +99,7 @@
               <p class="u-color-white u-font-md u-max-width-sm">THIS IS NOT A NEWSLETTER, JUST EVERYDAY VALUE. STAY UP TO DATE ON ALL BRANDED OFFERS.</p>
             </div>
             <div class="u-margin-auto u-padding">
-              <form class="form form--inline">
+              <form class="form form--inline" data-form="newsletter">
                 <div class="u-margin-right u-flex-grow form__item">
                   <input id="newsletter-email" name="newsletter-email" type="email" placeholder="Enter your email" />
                 </div>
@@ -145,7 +145,7 @@
           <div class="u-padding-top container--padding">
             <h2 class="u-margin-bottom u-color-primary u-text-center">Contact us</h2>
             <div class="container--max-width-sm">
-              <form class="form">
+              <form class="form" data-form="contact">
                 <div class="form__item u-margin-bottom--md">
                   <label for="contact-type">Inquiry type</label>
                   <select id="contact-type" name="contact-type" required="required">
@@ -184,6 +184,7 @@
 
     <!-- combo and minify scripts when not logged in -->
     <squarespace:script src="site.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
+    <squarespace:script src="forms.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
 
     <!-- other scripts, and footer code injection -->
     {squarespace-footers}
