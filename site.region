@@ -49,7 +49,7 @@
           <div class="container--padding u-text-center">
             <img src="/assets/svgs/ca.svg" alt="CA Icon" />
             <h2 class="u-margin-bottom u-color-primary">Our Products</h2>
-            <squarespace:query collection="products" limit="9">
+            <squarespace:query collection="new-products" limit="9">
               <ol>
                 {.repeated section items}
                   <li><a href="{fullUrl}">{title}</a></li>
