@@ -7,7 +7,7 @@
     <!-- include system scripts, page meta, and header code injection -->
     {squarespace-headers}
   </head>
-  <body id="{squarespace.page-id}" class="u-background-color-primary {squarespace.page-classes}">
+  <body id="{squarespace.page-id}" class="u-background-color-white {squarespace.page-classes}">
 
     <!-- site navigation -->
     <squarespace:navigation navigationId="headerNav" template="header-navigation" />
@@ -16,7 +16,7 @@
     <main role="main">
 
       <section id="hero">
-        <div class="u-line-height--none container--max-width-lg">
+        <div class="u-line-height--none">
           <img class="u-fullwidth" src="/assets/jpgs/hero.jpg" alt="Site Hero" />
         </div>
       </section>
@@ -34,8 +34,11 @@
             </div>
           </div>
         </div>
+      </section>
+
+      <section id="process" class="u-background-color-primary">
         <div class="container--max-width-lg">
-          <div class="container--padding">
+          <div class="u-padding-top--lg u-padding-bottom--lg container--padding">
             <img class="u-display-block u-margin-auto" src="/assets/svgs/process.svg" alt="Company Process" />
           </div>
         </div>
@@ -47,42 +50,51 @@
             <img src="/assets/svgs/ca.svg" alt="CA Icon" />
             <h2 class="u-margin-bottom u-color-primary">Our Products</h2>
             <div class="container--3col">
-              <div class="container__item">
+              <div class="container container__item container__item--product">
                 <img class="u-fullwidth" src="/assets/jpgs/cannabis-infused-chocolate.jpg" alt="Cannabis Infused Chocolate" />
                 <h4>Chocolate - 100mg</h4>
-                <p><span class="u-font-md">Milk Chocolate |</span> <i class="u-text-sm">10 x 10mg</i></p>
+                <dl>
+                  <dt class="u-font-md">Milk Chocolate |</dt><dd><i class="u-text-sm">10 x 10mg</i></dd>
+                </dl>
               </div>
-              <div class="container__item">
-                <img class="u-fullwidth" src="/assets/jpgs/tincture.jpg" alt="Tincture" />
+              <div class="container container__item container__item--product">
+                <img class="u-fullwidth" src="/assets/jpgs/tincture-bag.jpg" alt="Tincture Bag" />
+                <img class="u-fullwidth rollover" src="/assets/jpgs/tincture-bottle.jpg" alt="Tincture Bottle" />
                 <h4>Tincture - 100mg</h4>
-                <p><span class="u-font-md">Spice Chai |</span> <i class="u-text-sm">Indica</i></p>
-                <p><span class="u-font-md">Blood Orange |</span> <i class="u-text-sm">Hybrid</i></p>
-                <p><span class="u-font-md">Lemon Honey |</span> <i class="u-text-sm">Sativa</i></p>
+                <dl>
+                  <dt class="u-font-md">Spice Chai |</dt><dd><i class="u-text-sm">Indica</i></dd>
+                  <dt class="u-font-md">Blood Orange |</dt><dd><i class="u-text-sm">Hybrid</i></dd>
+                  <dt class="u-font-md">Lemon Honey |</dt><dd><i class="u-text-sm">Sativa</i></dd>
+                </dl>
               </div>
-              <div class="container__item">
+              <div class="container container__item container__item--product">
                 <img class="u-fullwidth" src="/assets/jpgs/disposable-vape.jpg" alt="Disposable Vape" />
                 <h4>Disposable Vape - 0.3g</h4>
-                <p><span class="u-font-md">Skywalker |</span> <i class="u-text-sm">Indica</i></p>
-                <p><span class="u-font-md">GSC | <i class="u-text-sm">Hybrid</i></p>
-                <p><span class="u-font-md">Sunday Brunch |</span> <i class="u-text-sm">Hybrid</i></p>
-                <p><span class="u-font-md">Blue Dream |</span> <i class="u-text-sm">Sativa</i></p>
-                <p><span class="u-font-md">Daddy Cool |</span> <i class="u-text-sm">Sativa</i></p>
+                <dl>
+                  <dt class="u-font-md">Skywalker |</dt><dd><i class="u-text-sm">Indica</i></dd>
+                  <dt class="u-font-md">GSC |</dt><dd><i class="u-text-sm">Hybrid</i></dd>
+                  <dt class="u-font-md">Sunday Brunch |</dt><dd><i class="u-text-sm">Hybrid</i></dd>
+                  <dt class="u-font-md">Blue Dream |</dt><dd><i class="u-text-sm">Sativa</i></dd>
+                  <dt class="u-font-md">Daddy Cool |</dt><dd><i class="u-text-sm">Sativa</i></dd>
+                </dl>
               </div>
-              <div class="container__item">
+              <div class="container container__item container__item--product">
                 <img class="u-fullwidth" src="/assets/jpgs/vape-cartridge-half-gram.jpg" alt="Vape Cartridge Half Gram" />
                 <h4>Vape Cartridge - 0.5g</h4>
-                <p><span class="u-font-md">Skywalker |</span> <i class="u-text-sm">Indica</i></p>
-                <p><span class="u-font-md">GSC |</span> <i class="u-text-sm">Hybrid</i></p>
-                <p><span class="u-font-md">Sunday Brunch |</span> <i class="u-text-sm">Hybrid</i></p>
-                <p><span class="u-font-md">Blue Dream |</span> <i class="u-text-sm">Sativa</i></p>
-                <p><span class="u-font-md">Daddy Cool |</span> <i class="u-text-sm">Sativa</i></p>
+                <dl>
+                  <dt class="u-font-md">Skywalker |</dt><dd><i class="u-text-sm">Indica</i></dd>
+                  <dt class="u-font-md">GSC |</dt><dd><i class="u-text-sm">Hybrid</i></dd>
+                  <dt class="u-font-md">Sunday Brunch |</dt><dd><i class="u-text-sm">Hybrid</i></dd>
+                  <dt class="u-font-md">Blue Dream |</dt><dd><i class="u-text-sm">Sativa</i></dd>
+                  <dt class="u-font-md">Daddy Cool |</dt><dd><i class="u-text-sm">Sativa</i></dd>
+                </dl>
               </div>
-              <div class="container__item">
+              <div class="container container__item container__item--product">
                 <img class="u-fullwidth" src="/assets/jpgs/vape-cartridge-gram.jpg" alt="Vape Cartridge Full Gram" />
                 <h4>Vape Cartridge - 1g</h4>
                 <p class="u-text-uppercase"><span class="u-font-md">Coming Soon</span></p>
               </div>
-              <div class="container__item">
+              <div class="container container__item container__item--product">
                 <img class="u-fullwidth" src="/assets/jpgs/flower-pre-rolls.jpg" alt="Flower Pre-Rolls" />
                 <h4>Flower Pre-Rolls - 3.5g</h4>
                 <p class="u-text-uppercase"><span class="u-font-md">Coming Soon</span></p>
@@ -92,11 +104,11 @@
         </div>
       </section>
 
-      <section id="newsletter">
+      <section id="newsletter" class="u-background-color-primary">
         <div class="container--max-width-lg">
-          <div class="container--padding container--2col">
+          <div class="u-padding-top--lg u-padding-bottom--lg container--padding container--2col">
             <div class="u-padding">
-              <p class="u-color-white u-font-md u-max-width-sm">THIS IS NOT A NEWSLETTER, JUST EVERYDAY VALUE. STAY UP TO DATE ON ALL BRANDED OFFERS.</p>
+              <p class="u-max-width-sm u-color-white u-font-md">THIS IS NOT A NEWSLETTER, JUST EVERYDAY VALUE. STAY UP TO DATE ON ALL BRANDED OFFERS.</p>
             </div>
             <div class="u-margin-auto u-padding">
               <form class="form form--inline" data-form="newsletter">
@@ -110,27 +122,36 @@
             </div>
           </div>
         </div>
-      <section>
+      </section>
       
       <section id="locate">
         <div class="u-background-color-white container--max-width-lg">
           <div class="container--padding">
             <h2 class="u-margin-bottom u-color-primary u-text-center">Locate Branded</h2>
+            <script type="text/javascript">
+              function getRandomBuildingImage() {
+                var path = '/assets/svgs/';
+                var num = Math.floor(Math.random() * 3);
+                var img = 'building-' + (num + 1) + '.svg';
+                var imgStr = '<img src="' + path + img + '" alt = "">';
+                document.write(imgStr); document.close();
+              }
+            </script> 
             <div class="container--3col">
-              <div class="container__item">
-                <img src="/assets/svgs/building-1.svg" alt="Barc Location" />
+              <div class="u-text-center container__item">
+                <script type="text/javascript">getRandomBuildingImage();</script>
                 <h4>Barc</h4>
                 <p>432 S San Vicente Blvd. #100</p>
                 <p>Los Angeles, CA 90048</p>
               </div>
-              <div class="container__item">
-                <img src="/assets/svgs/building-2.svg" alt="Erba Collective Location" />
+              <div class="u-text-center container__item">
+                <script type="text/javascript">getRandomBuildingImage();</script>
                 <h4>Erba Collective</h4>
                 <p>12320 W Pico Blvd.</p>
                 <p>Los Angeles, CA 90064</p>
               </div>
-              <div class="container__item">
-                <img src="/assets/svgs/building-3.svg" alt="Herbarium Location" />
+              <div class="u-text-center container__item">
+                <script type="text/javascript">getRandomBuildingImage();</script>
                 <h4>Herbarium</h4>
                 <p>979 N La Brea Ave.</p>
                 <p>West Hollywood, CA 90038</p>
@@ -146,7 +167,7 @@
             <h2 class="u-margin-bottom u-color-primary u-text-center">Contact us</h2>
             <div class="container--max-width-sm">
               <form class="form" data-form="contact">
-                <div class="form__item u-margin-bottom--md">
+                <div class="form__item u-margin-bottom">
                   <label for="contact-type">Inquiry type</label>
                   <select id="contact-type" name="contact-type" required="required">
                     <option selected value="general">General Inquiry</option>
@@ -155,19 +176,19 @@
                     <option value="2">One Last Option</option>
                   </select>
                 </div>
-                <div class="form__item u-margin-bottom--md">
+                <div class="form__item u-margin-bottom">
                   <label for="contact-name">Your Name</label>
                   <input id="contact-name" name="contact-name" type="text" required="required">
                 </div>
-                <div class="form__item u-margin-bottom--md">
+                <div class="form__item u-margin-bottom">
                   <label for="contact-email">Email</label>
                   <input id="contact-email" name="contact-email" type="text" required="required">
                 </div>
-                <div class="form__item u-margin-bottom--md">
+                <div class="form__item u-margin-bottom">
                   <label for="contact-dispensary">Dispensary Name</label>
                   <input id="contact-dispensary" name="contact-dispensary" type="text" required="required">
                 </div>
-                <div class="form__item u-margin-bottom--md">
+                <div class="form__item u-margin-bottom">
                   <label for="contact-message">Message</label>
                   <textarea id="contact-message" name="contact-message" required="required"></textarea>
                 </div>

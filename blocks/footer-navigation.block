@@ -1,6 +1,6 @@
-<footer>
+<footer class="u-background-color-primary">
   <div class="container--max-width-lg">
-    <div class="u-padding-top--lg u-padding-bottom--lg">
+    <div class="u-padding-top--lg">
       <div class="u-padding u-text-center">
         <img src="/assets/svgs/logo.svg" alt="BRANDED Footer Logo" />
       </div>
