@@ -49,6 +49,13 @@
           <div class="container--padding u-text-center">
             <img src="/assets/svgs/ca.svg" alt="CA Icon" />
             <h2 class="u-margin-bottom u-color-primary">Our Products</h2>
+            <squarespace:query collection="products" limit="9">
+              <ol>
+                {.repeated section items}
+                  <li><a href="{fullUrl}">{title}</a></li>
+                {.end}
+              </ol>
+            </squarespace:query>
             <div class="container--3col">
               <div class="container container__item container__item--product">
                 <img class="u-fullwidth" src="/assets/jpgs/cannabis-infused-chocolate.jpg" alt="Cannabis Infused Chocolate" />
