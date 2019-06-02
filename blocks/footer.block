@@ -5,7 +5,7 @@
         <img src="/assets/svgs/logo.svg" alt="BRANDED Footer Logo" />
       </div>
       <div class="u-color-white container--3col container--align-items-center">
-        <div class="u-text-center container__item">
+        <div class="u-text-center container container__item">
           <!-- navigation -->
           <ul class="site-navigation__menu site-navigation__menu--vertical">
             {.repeated section items}
@@ -24,13 +24,13 @@
             {.end}
           </ul>
         </div>
-        <div class="u-text-center container__item">
+        <div class="u-text-center container container__item">
           <h4>Customer Service</h4>
           <p>support@trybranded.com</p>
           <h4>Press Inquiries</h4>
           <p>press@trybranded.com</p>
         </div>
-        <div class="u-text-center container__item">
+        <div class="u-text-center container container__item">
           <p>@trybranded</p>
           <p>#brandedcannabis</p>
           <p>#thegreenbag</p>
