@@ -10,7 +10,7 @@
   <body id="{squarespace.page-id}" class="u-background-color-white {squarespace.page-classes}">
 
     <!-- site navigation -->
-    <squarespace:navigation navigationId="headerNav" template="header-navigation" />
+    <squarespace:navigation navigationId="headerNav" template="header" />
 
     <!-- main content -->
     <main role="main">
@@ -49,63 +49,12 @@
           <div class="container--padding u-text-center">
             <img src="/assets/svgs/ca.svg" alt="CA Icon" />
             <h2 class="u-margin-bottom u-color-primary">Our Products</h2>
-            <squarespace:query collection="products" limit="9">
-              <ol>
-                {.repeated section items}
-                  <li><a href="{fullUrl}">{title}</a></li>
-                {.end}
-              </ol>
-            </squarespace:query>
             <div class="container--3col">
-              <div class="container container__item container__item--product">
-                <img class="u-fullwidth" src="/assets/jpgs/cannabis-infused-chocolate.jpg" alt="Cannabis Infused Chocolate" />
-                <h4>Chocolate - 100mg</h4>
-                <dl>
-                  <dt class="u-font-md">Milk Chocolate |</dt><dd><i class="u-text-sm">10 x 10mg</i></dd>
-                </dl>
-              </div>
-              <div class="container container__item container__item--product">
-                <img class="u-fullwidth" src="/assets/jpgs/tincture-bag.jpg" alt="Tincture Bag" />
-                <img class="u-fullwidth rollover" src="/assets/jpgs/tincture-bottle.jpg" alt="Tincture Bottle" />
-                <h4>Tincture - 100mg</h4>
-                <dl>
-                  <dt class="u-font-md">Spice Chai |</dt><dd><i class="u-text-sm">Indica</i></dd>
-                  <dt class="u-font-md">Blood Orange |</dt><dd><i class="u-text-sm">Hybrid</i></dd>
-                  <dt class="u-font-md">Lemon Honey |</dt><dd><i class="u-text-sm">Sativa</i></dd>
-                </dl>
-              </div>
-              <div class="container container__item container__item--product">
-                <img class="u-fullwidth" src="/assets/jpgs/disposable-vape.jpg" alt="Disposable Vape" />
-                <h4>Disposable Vape - 0.3g</h4>
-                <dl>
-                  <dt class="u-font-md">Skywalker |</dt><dd><i class="u-text-sm">Indica</i></dd>
-                  <dt class="u-font-md">GSC |</dt><dd><i class="u-text-sm">Hybrid</i></dd>
-                  <dt class="u-font-md">Sunday Brunch |</dt><dd><i class="u-text-sm">Hybrid</i></dd>
-                  <dt class="u-font-md">Blue Dream |</dt><dd><i class="u-text-sm">Sativa</i></dd>
-                  <dt class="u-font-md">Daddy Cool |</dt><dd><i class="u-text-sm">Sativa</i></dd>
-                </dl>
-              </div>
-              <div class="container container__item container__item--product">
-                <img class="u-fullwidth" src="/assets/jpgs/vape-cartridge-half-gram.jpg" alt="Vape Cartridge Half Gram" />
-                <h4>Vape Cartridge - 0.5g</h4>
-                <dl>
-                  <dt class="u-font-md">Skywalker |</dt><dd><i class="u-text-sm">Indica</i></dd>
-                  <dt class="u-font-md">GSC |</dt><dd><i class="u-text-sm">Hybrid</i></dd>
-                  <dt class="u-font-md">Sunday Brunch |</dt><dd><i class="u-text-sm">Hybrid</i></dd>
-                  <dt class="u-font-md">Blue Dream |</dt><dd><i class="u-text-sm">Sativa</i></dd>
-                  <dt class="u-font-md">Daddy Cool |</dt><dd><i class="u-text-sm">Sativa</i></dd>
-                </dl>
-              </div>
-              <div class="container container__item container__item--product">
-                <img class="u-fullwidth" src="/assets/jpgs/vape-cartridge-gram.jpg" alt="Vape Cartridge Full Gram" />
-                <h4>Vape Cartridge - 1g</h4>
-                <p class="u-text-uppercase"><span class="u-font-md">Coming Soon</span></p>
-              </div>
-              <div class="container container__item container__item--product">
-                <img class="u-fullwidth" src="/assets/jpgs/flower-pre-rolls.jpg" alt="Flower Pre-Rolls" />
-                <h4>Flower Pre-Rolls - 3.5g</h4>
-                <p class="u-text-uppercase"><span class="u-font-md">Coming Soon</span></p>
-              </div>
+              <squarespace:query collection="products" limit="9">
+                {.repeated section items}
+                  {@|apply product.block}
+                {.end}
+              </squarespace:query>
             </div>
           </div>
         </div>
@@ -145,19 +94,19 @@
               }
             </script> 
             <div class="container--3col">
-              <div class="u-text-center container__item">
+              <div class="u-text-center container container__item">
                 <script type="text/javascript">getRandomBuildingImage();</script>
                 <h4>Barc</h4>
                 <p>432 S San Vicente Blvd. #100</p>
                 <p>Los Angeles, CA 90048</p>
               </div>
-              <div class="u-text-center container__item">
+              <div class="u-text-center container container__item">
                 <script type="text/javascript">getRandomBuildingImage();</script>
                 <h4>Erba Collective</h4>
                 <p>12320 W Pico Blvd.</p>
                 <p>Los Angeles, CA 90064</p>
               </div>
-              <div class="u-text-center container__item">
+              <div class="u-text-center container container__item">
                 <script type="text/javascript">getRandomBuildingImage();</script>
                 <h4>Herbarium</h4>
                 <p>979 N La Brea Ave.</p>
@@ -208,7 +157,7 @@
     </main>
 
     <!-- site footer -->
-    <squarespace:navigation navigationId="footerNav" template="footer-navigation" />
+    <squarespace:navigation navigationId="footerNav" template="footer" />
 
     <!-- combo and minify scripts when not logged in -->
     <squarespace:script src="site.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />

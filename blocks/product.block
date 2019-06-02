@@ -1,0 +1,26 @@
+<article class="container container__item container__item--product">
+  <figure class="u-margin-hug">
+    {.var @firstImg items.0}
+    {.if @firstImg}
+      <img class="u-fullwidth" src={@firstImg.assetUrl} />
+    {.end}
+    {.var @secondImg items.1}
+    {.if @secondImg}
+      <img class="u-fullwidth rollover" src={@secondImg.assetUrl} />
+    {.end}
+    <figcaption>
+      <h4>{title}</h4>
+    </figcaption>
+  </figure>
+  {.if variants.0.attributes.Strain}
+    <dl>
+    {.repeated section variants}
+      {.var @strain attributes.Strain}
+      {.var @breed attributes.Breed}
+      <dt class="u-font-md">{@strain} |</dt><dd><i class="u-text-sm">{@breed}</i></dd>
+    {.end}
+    </dl>
+  {.or}
+    <p class="u-text-uppercase"><span class="u-font-md">Coming Soon</span></p>
+  {.end}
+</article>
