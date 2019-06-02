@@ -12,7 +12,7 @@
       <h4>{title}</h4>
     </figcaption>
   </figure>
-  {.if variants.0.attributes.Strain}
+  {.if variants.0.attributes.Strain && variants.0.attributes.Breed}
     <dl>
     {.repeated section variants}
       {.var @strain attributes.Strain}

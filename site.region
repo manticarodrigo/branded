@@ -50,7 +50,7 @@
             <img src="/assets/svgs/ca.svg" alt="CA Icon" />
             <h2 class="u-margin-bottom u-color-primary">Our Products</h2>
             <div class="container--3col">
-              <squarespace:query collection="products" limit="9">
+              <squarespace:query collection="products">
                 {.repeated section items}
                   {@|apply product.block}
                 {.end}
