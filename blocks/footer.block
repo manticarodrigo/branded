@@ -26,14 +26,14 @@
         </div>
         <div class="u-text-center container container__item">
           <h4>Customer Service</h4>
-          <p>support@trybranded.com</p>
+          <p><a href="mailto:support@trybranded.com">support@trybranded.com</a></p>
           <h4>Press Inquiries</h4>
-          <p>press@trybranded.com</p>
+          <p><a href="mailto:press@trybranded.com">press@trybranded.com</a></p>
         </div>
         <div class="u-text-center container container__item">
-          <p>@trybranded</p>
-          <p>#brandedcannabis</p>
-          <p>#thegreenbag</p>
+          <p><a href="https://www.instagram.com/try_branded/" target="_blank">@trybranded</a></p>
+          <p><a href="https://www.instagram.com/explore/tags/brandedcannabis" target="_blank">#brandedcannabis</a></p>
+          <p><a href="https://www.instagram.com/explore/tags/thegreenbag" target="_blank">#thegreenbag</a></p>
         </div>
       </div>
     </div>
