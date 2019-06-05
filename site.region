@@ -94,19 +94,19 @@
               }
             </script> 
             <div class="container--3col">
-              <div class="u-text-center container container__item">
+              <div class="u-text-center container__item">
                 <script type="text/javascript">getRandomBuildingImage();</script>
                 <h4>Barc</h4>
                 <p>432 S San Vicente Blvd. #100</p>
                 <p>Los Angeles, CA 90048</p>
               </div>
-              <div class="u-text-center container container__item">
+              <div class="u-text-center container__item">
                 <script type="text/javascript">getRandomBuildingImage();</script>
                 <h4>Erba Collective</h4>
                 <p>12320 W Pico Blvd.</p>
                 <p>Los Angeles, CA 90064</p>
               </div>
-              <div class="u-text-center container container__item">
+              <div class="u-text-center container__item">
                 <script type="text/javascript">getRandomBuildingImage();</script>
                 <h4>Herbarium</h4>
                 <p>979 N La Brea Ave.</p>

@@ -1,4 +1,4 @@
-<article class="container container__item container__item--product">
+<article class="container__item container__item--product">
   <figure class="u-margin-hug">
     {.var @firstImg items.0}
     {.if @firstImg}
