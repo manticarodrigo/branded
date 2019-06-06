@@ -1,4 +1,3 @@
-
 /**
  * This script wrapped in a Immediately-Invoked Function Expression (IIFE) to
  * prevent variables from leaking onto the global scope. For more information

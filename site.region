@@ -8,6 +8,21 @@
     {squarespace-headers}
   </head>
   <body id="{squarespace.page-id}" class="u-background-color-white {squarespace.page-classes}">
+    <!-- age gate -->
+    <section id="age-gate" class="age-gate">
+      <aside class="age-gate__modal">
+        <header class="age-gate__modal__header">
+          <img src="/assets/svgs/logo.svg" alt="BRANDED Age Gate Logo" />
+        </header>
+        <div class="age-gate__modal__body">
+          <h4 class="u-margin-hug u-margin-bottom u-color-white h3">Are you 21 or over?</h4>
+          <a id="age-gate-submit" class="btn btn--secondary">Yes, I&apos;m 21&#43;</a>
+        </div>
+        <footer class="age-gate__modal__footer">
+          <a href="http://google.com">No, i&apos;m not old enough.</a>
+        </footer>
+      </aside>
+    </section>
 
     <!-- site navigation -->
     <squarespace:navigation navigationId="headerNav" template="header" />
@@ -162,6 +177,7 @@
     <!-- combo and minify scripts when not logged in -->
     <squarespace:script src="site.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
     <squarespace:script src="forms.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
+    <squarespace:script src="age-gate.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
 
     <!-- other scripts, and footer code injection -->
     {squarespace-footers}
