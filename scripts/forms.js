@@ -17,9 +17,9 @@
   var contactFormElement = document.querySelector('[data-form=contact]');
 
   function addFormSubmissionListener(formElement, callback) {
-    if (formElement.addEventListener){
+    if (formElement.addEventListener) {
       formElement.addEventListener('submit', callback, false); // modern browsers
-    } else if (newsletterForm.attachEvent){
+    } else if (newsletterForm.attachEvent) {
       formElement.attachEvent('onsubmit', callback); // old IE
     }
   }
@@ -114,7 +114,7 @@
         pageUri: 'trybranded.com',
         pageName: 'BRANDED'
       }
-    }
+    };
 
     fetch(
       'https://api.hsforms.com/submissions/v3/integration/submit/' + portalId + '/' + formId,
@@ -136,6 +136,6 @@
 
         handleError();
       })
-      .catch(handleError)
+      .catch(handleError);
   }
 })();
