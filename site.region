@@ -175,9 +175,9 @@
     <squarespace:navigation navigationId="footerNav" template="footer" />
 
     <!-- combo and minify scripts when not logged in -->
-    <squarespace:script src="site.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
-    <squarespace:script src="forms.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
-    <squarespace:script src="age-gate.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
+    <squarespace:script src="site.js" />
+    <squarespace:script src="forms.js" />
+    <squarespace:script src="age-gate.js" />
 
     <!-- other scripts, and footer code injection -->
     {squarespace-footers}
