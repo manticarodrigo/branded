@@ -12,12 +12,12 @@
       <h4>{title}</h4>
     </figcaption>
   </figure>
-  {.if variants.0.attributes.Strain && variants.0.attributes.Breed}
+  {.if variants.0.attributes.Strain}
     <dl>
     {.repeated section variants}
       {.var @strain attributes.Strain}
       {.var @breed attributes.Breed}
-      <dt class="u-font-md">{@strain} |</dt><dd><i class="u-text-sm">{@breed}</i></dd>
+      <dt class="u-font-md">{@strain}{.if @breed} &vert;{.end}</dt>{.if @breed}<dd><i class="u-text-sm">{@breed}</i></dd>{.end}
     {.end}
     </dl>
   {.or}
