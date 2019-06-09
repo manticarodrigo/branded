@@ -1,0 +1,12 @@
+<article class="u-text-center container__item">
+  <script type="text/javascript">
+    var path = '/assets/svgs/';
+    var num = Math.floor(Math.random() * 3);
+    var img = 'building-' + (num + 1) + '.svg';
+    var imgStr = '<img src="' + path + img + '" alt = "">';
+    document.write(imgStr); document.close();
+  </script>
+  <h3 class="h4">{location.addressTitle}</h3>
+  <p>{location.addressLine1}</p>
+  <p>{location.addressLine2}</p>
+</article>

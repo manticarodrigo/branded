@@ -100,34 +100,12 @@
         <div class="u-background-color-white container--max-width-lg">
           <div class="container--padding">
             <h2 class="u-margin-bottom u-color-primary u-text-center">Locate Branded</h2>
-            <script type="text/javascript">
-              function getRandomBuildingImage() {
-                var path = '/assets/svgs/';
-                var num = Math.floor(Math.random() * 3);
-                var img = 'building-' + (num + 1) + '.svg';
-                var imgStr = '<img src="' + path + img + '" alt = "">';
-                document.write(imgStr); document.close();
-              }
-            </script> 
             <div class="container--3col">
-              <div class="u-text-center container__item">
-                <script type="text/javascript">getRandomBuildingImage();</script>
-                <h3 class="h4">Barc</h3>
-                <p>432 S San Vicente Blvd. #100</p>
-                <p>Los Angeles, CA 90048</p>
-              </div>
-              <div class="u-text-center container__item">
-                <script type="text/javascript">getRandomBuildingImage();</script>
-                <h3 class="h4">Erba Collective</h3>
-                <p>12320 W Pico Blvd.</p>
-                <p>Los Angeles, CA 90064</p>
-              </div>
-              <div class="u-text-center container__item">
-                <script type="text/javascript">getRandomBuildingImage();</script>
-                <h3 class="h4">Herbarium</h3>
-                <p>979 N La Brea Ave.</p>
-                <p>West Hollywood, CA 90038</p>
-              </div>
+              <squarespace:query collection="locations">
+                {.repeated section items}
+                  {@|apply location.block}
+                {.end}
+              </squarespace:query>
             </div>
           </div>
         </div>
