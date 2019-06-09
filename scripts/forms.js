@@ -8,6 +8,7 @@
 (function() {
   'use strict';
 
+  var actionBaseUrl = 'https://api.hsforms.com/submissions/v3/integration/submit/';
   var portalId = '4524310';
 
   var newsletterFormId = '17cf8be7-1330-485d-b001-e759d62e8936';
@@ -28,40 +29,14 @@
   addFormSubmissionListener(contactFormElement, submitContactForm);
 
   function submitNewsletterForm(ev) {
-    function getNewsletterFieldName(name) {
-      switch(name) {
-        case 'newsletter-email':
-          return 'email';
-        default:
-          return name;
-      }
-    }
-
-    submitForm(ev, newsletterFormId, getNewsletterFieldName, true);
+    submitForm(ev, newsletterFormId, true);
   }
 
   function submitContactForm(ev) {
-    function getContactFieldName(name) {
-      switch(name) {
-        case 'contact-type':
-          return 'subject';
-        case 'contact-name':
-          return 'firstname';
-        case 'contact-email':
-          return 'email';
-        case 'contact-dispensary':
-          return 'company';
-        case 'contact-message':
-          return 'message';
-        default:
-          return name;
-      }
-    }
-
-    submitForm(ev, contactFormId, getContactFieldName);
+    submitForm(ev, contactFormId);
   }
 
-  function submitForm(ev, formId, getFieldName, isAltBg) {
+  function submitForm(ev, formId, isAltBg) {
     ev.preventDefault();
 
     var formElement = ev.target;
@@ -77,7 +52,7 @@
 
         if (type !== 'submit') {
           fields[i] = {
-            name: getFieldName(name),
+            name: name,
             value: value
           };
         }
@@ -116,26 +91,19 @@
       }
     };
 
-    fetch(
-      'https://api.hsforms.com/submissions/v3/integration/submit/' + portalId + '/' + formId,
-      {
-        method: 'post',
-        mode: 'cors', // no-cors, cors, *same-origin
-        cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
-        credentials: 'same-origin', // include, *same-origin, omit
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData)
-      }
-    )
-      .then(function(response) {
-        if (response.status === 200) {
-          return handleSuccess();
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState == 4) {
+        if (xhr.status == 200) {
+          handleSuccess();
+        } else {
+          handleError();
         }
-
-        handleError();
-      })
-      .catch(handleError);
+      }
+    }
+    xhr.open('post', actionBaseUrl + portalId + '/' + formId, true);
+    xhr.setRequestHeader('Accept', 'application/json');
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.send(JSON.stringify(formData));
   }
 })();

@@ -84,7 +84,7 @@
             <div class="u-margin-auto u-padding">
               <form class="form form--inline" data-form="newsletter">
                 <div class="u-margin-right u-flex-grow form__item">
-                  <input id="newsletter-email" name="newsletter-email" type="email" placeholder="Enter your email" />
+                  <input id="newsletter-email" name="email" type="email" placeholder="Enter your email" />
                 </div>
                 <div class="form__item">
                   <button type="submit" class="u-padding-right--md u-padding-left--md btn btn--secondary">Submit</button>
@@ -140,7 +140,7 @@
               <form class="form" data-form="contact">
                 <div class="form__item u-margin-bottom">
                   <label for="contact-type">Inquiry type</label>
-                  <select id="contact-type" name="contact-type" required="required">
+                  <select id="contact-type" name="subject" required="required">
                     <option selected value="general">General Inquiry</option>
                     <option value="0">First Option</option>
                     <option value="1">Another Option</option>
@@ -149,19 +149,19 @@
                 </div>
                 <div class="form__item u-margin-bottom">
                   <label for="contact-name">Your Name</label>
-                  <input id="contact-name" name="contact-name" type="text" required="required">
+                  <input id="contact-name" name="firstname" type="text" required="required">
                 </div>
                 <div class="form__item u-margin-bottom">
                   <label for="contact-email">Email</label>
-                  <input id="contact-email" name="contact-email" type="text" required="required">
+                  <input id="contact-email" name="email" type="text" required="required">
                 </div>
                 <div class="form__item u-margin-bottom">
                   <label for="contact-dispensary">Dispensary Name</label>
-                  <input id="contact-dispensary" name="contact-dispensary" type="text" required="required">
+                  <input id="contact-dispensary" name="company" type="text" required="required">
                 </div>
                 <div class="form__item u-margin-bottom">
                   <label for="contact-message">Message</label>
-                  <textarea id="contact-message" name="contact-message" required="required"></textarea>
+                  <textarea id="contact-message" name="message" required="required"></textarea>
                 </div>
                 <button type="submit" class="u-padding-right--md u-padding-left--md btn">Submit Inquiry</button>
               </form>
