@@ -8,8 +8,8 @@
     {squarespace-headers}
   </head>
   <body id="{squarespace.page-id}" class="u-background-color-white {squarespace.page-classes}">
-    <!-- age gate -->
-    {@|apply age-gate.block}
+    <!-- age verification -->
+    {@|apply verification.block}
 
     <!-- site navigation -->
     <squarespace:navigation navigationId="headerNav" template="header" />
@@ -32,20 +32,9 @@
 
     {@|apply newsletter.block}
     
-    <section id="locate">
-      <div class="u-background-color-white container--max-width-lg">
-        <div class="container--padding">
-          <h2 class="u-margin-bottom u-color-primary u-text-center">Locate Branded</h2>
-          <div class="container--3col">
-            <squarespace:query collection="locations">
-              {.repeated section items}
-                {@|apply location.block}
-              {.end}
-            </squarespace:query>
-          </div>
-        </div>
-      </div>
-    </section>
+    <squarespace:query collection="locations">
+      {@|apply locations.block}
+    </squarespace:query>
 
     {@|apply contact.block}
 
@@ -66,10 +55,10 @@
       </div>
     </footer>
 
-    <!-- combo and minify scripts when not logged in -->
+    <!-- custom scripts -->
     <squarespace:script src="site.js" />
     <squarespace:script src="forms.js" />
-    <squarespace:script src="age-gate.js" />
+    <squarespace:script src="verification.js" />
 
     <!-- other scripts, and footer code injection -->
     {squarespace-footers}

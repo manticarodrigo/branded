@@ -1,0 +1,14 @@
+<section id="verification" class="verification">
+  <aside class="verification__modal">
+    <header class="verification__modal__header">
+      <img src="/assets/svgs/logo.svg" alt="BRANDED Logo for Age Verification" />
+    </header>
+    <div class="verification__modal__body">
+      <h1 class="u-margin-hug u-margin-bottom u-color-white h3">Are you 21 or over?</h1>
+      <a id="verification-submit" class="btn btn--secondary">Yes, I&apos;m 21&#43;</a>
+    </div>
+    <footer class="verification__modal__footer">
+      <a href="https://google.com">No, i&apos;m not old enough.</a>
+    </footer>
+  </aside>
+</section>

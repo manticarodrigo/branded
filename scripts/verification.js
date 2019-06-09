@@ -30,19 +30,19 @@
   }
 
   // check if the age has already been verified
-  var ageGateCookieName = 'age';
-  var ageGateCookieValue = 'verified';
-  var ageGate = document.getElementById('age-gate');
-  var ageGateSubmit = document.getElementById('age-gate-submit');
-  var ageGateUnknownClass = 'age-gate--unknown';
+  var verificationCookieName = 'age-verification';
+  var verificationCookieValue = 'verified';
+  var verification = document.getElementById('verification');
+  var verificationSubmit = document.getElementById('verification-submit');
+  var verificationUnknownClass = 'verification--unknown';
 
-  if (getCookie(ageGateCookieName) !== ageGateCookieValue) {
-    ageGate.classList.add(ageGateUnknownClass);
+  if (getCookie(verificationCookieName) !== verificationCookieValue) {
+    verification.classList.add(verificationUnknownClass);
   }
 
   // if the submit button is clicked, add a cookie and hide the modal
-  ageGateSubmit.onclick = function() {
-    setCookie(ageGateCookieName, ageGateCookieValue, 90);
-    ageGate.classList.remove(ageGateUnknownClass);
+  verificationSubmit.onclick = function() {
+    setCookie(verificationCookieName, verificationCookieValue, 90);
+    verification.classList.remove(verificationUnknownClass);
   }
 }());

@@ -2,7 +2,7 @@
   <div class="u-background-color-white container--max-width-lg">
     <div class="container--padding u-text-center">
       <img src="/assets/svgs/ca.svg" alt="CA Icon" />
-      <h2 class="u-margin-bottom u-color-primary">Our Products</h2>
+      <h2 class="u-margin-bottom u-color-primary">{collection.title}</h2>
       <div class="container--3col">
           {.repeated section items}
             <article class="container__item container__item--product" data-item-id="{id}">
