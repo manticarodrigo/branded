@@ -15,7 +15,7 @@
           <img src="/assets/svgs/logo.svg" alt="BRANDED Age Gate Logo" />
         </header>
         <div class="age-gate__modal__body">
-          <h4 class="u-margin-hug u-margin-bottom u-color-white h3">Are you 21 or over?</h4>
+          <h1 class="u-margin-hug u-margin-bottom u-color-white h3">Are you 21 or over?</h1>
           <a id="age-gate-submit" class="btn btn--secondary">Yes, I&apos;m 21&#43;</a>
         </div>
         <footer class="age-gate__modal__footer">
@@ -84,6 +84,7 @@
             <div class="u-margin-auto u-padding">
               <form class="form form--inline" data-form="newsletter">
                 <div class="u-margin-right u-flex-grow form__item">
+                  <label class="u-sr-only" for="newsletter-email">Email Address</label>
                   <input id="newsletter-email" name="email" type="email" placeholder="Enter your email" />
                 </div>
                 <div class="form__item">
@@ -111,19 +112,19 @@
             <div class="container--3col">
               <div class="u-text-center container__item">
                 <script type="text/javascript">getRandomBuildingImage();</script>
-                <h4>Barc</h4>
+                <h3 class="h4">Barc</h3>
                 <p>432 S San Vicente Blvd. #100</p>
                 <p>Los Angeles, CA 90048</p>
               </div>
               <div class="u-text-center container__item">
                 <script type="text/javascript">getRandomBuildingImage();</script>
-                <h4>Erba Collective</h4>
+                <h3 class="h4">Erba Collective</h3>
                 <p>12320 W Pico Blvd.</p>
                 <p>Los Angeles, CA 90064</p>
               </div>
               <div class="u-text-center container__item">
                 <script type="text/javascript">getRandomBuildingImage();</script>
-                <h4>Herbarium</h4>
+                <h3 class="h4">Herbarium</h3>
                 <p>979 N La Brea Ave.</p>
                 <p>West Hollywood, CA 90038</p>
               </div>

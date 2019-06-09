@@ -2,14 +2,14 @@
   <figure class="u-margin-hug">
     {.var @firstImg items.0}
     {.if @firstImg}
-      <img class="u-fullwidth" src={@firstImg.assetUrl} />
+      <img class="u-fullwidth" src={@firstImg.assetUrl} alt={title}/>
     {.end}
     {.var @secondImg items.1}
     {.if @secondImg}
-      <img class="u-fullwidth rollover" src={@secondImg.assetUrl} />
+      <img class="u-fullwidth rollover" src={@secondImg.assetUrl} alt="{title} Alternate" />
     {.end}
     <figcaption>
-      <h4>{title}</h4>
+      <h3 class="h4">{title}</h3>
     </figcaption>
   </figure>
   {.if variants.0.attributes.Strain}

@@ -42,7 +42,7 @@
       /*
       * but let's hide the middle one.
       */
-      &:nth-child(3) {
+      &:nth-last-of-type(2) {
         opacity: 0;
         transform: rotate(0deg) scale(0.2, 0.2);
       }
@@ -50,7 +50,7 @@
       /*
       * the last one should go the other direction
       */
-      &:nth-child(4) {
+      &:last-of-type {
         transform: rotate(-45deg) translate(0, -1px);
       }
     }
@@ -85,7 +85,7 @@
       transform-origin: 0% 0%;
     }
 
-    &:nth-child(4) {
+    &:last-of-type {
       transform-origin: 0% 100%;
     }
   }

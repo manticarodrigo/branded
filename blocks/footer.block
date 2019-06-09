@@ -25,9 +25,9 @@
           </ul>
         </div>
         <div class="u-text-center container__item">
-          <h4>Customer Service</h4>
+          <h3 class="h4">Customer Service</h3>
           <p><a href="mailto:support@trybranded.com">support@trybranded.com</a></p>
-          <h4>Press Inquiries</h4>
+          <h3 class="h4">Press Inquiries</h3>
           <p><a href="mailto:press@trybranded.com">press@trybranded.com</a></p>
         </div>
         <div class="u-text-center container__item">
