@@ -2,7 +2,7 @@
   <figure class="u-margin-hug">
     {.var @firstImg items.0}
     {.if @firstImg}
-      <img class="u-fullwidth" src={@firstImg.assetUrl} alt={title}/>
+      <img class="u-fullwidth" src={@firstImg.assetUrl} alt="{title}"/>
     {.end}
     {.var @secondImg items.1}
     {.if @secondImg}
