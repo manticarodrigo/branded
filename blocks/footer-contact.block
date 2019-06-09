@@ -1,6 +1,6 @@
 <nav class="u-text-center container__item" data-content-field="navigation-footerContact">
   <!-- navigation -->
-  <ul class="u-margin-hug-top u-list-unstyled">
+  <ul class="u-list-unstyled">
     {.repeated section items}
       <!-- external link -->
       {.section externalLink}

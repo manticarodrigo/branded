@@ -1,7 +1,7 @@
 <section id="locate" data-collection-id="{collection.id}">
   <div class="u-background-color-white container--max-width-lg">
     <div class="container--padding">
-      <h2 class="u-margin-bottom u-color-primary u-text-center">{collection.title}</h2>
+      <h2 class="u-margin-bottom u-color-primary u-text-center">{collection.navigationTitle}</h2>
       <div class="container--3col">
           {.repeated section items}
             <article class="u-text-center container__item" data-item-id="{id}">
