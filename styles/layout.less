@@ -48,6 +48,7 @@
     & > * {
       box-sizing: border-box;
       flex-basis: 50%;
+      max-width: 50%;
     }
 
     @media (min-width: @breakpoint-sm) {
@@ -64,6 +65,7 @@
 
       & > * {
         flex-basis: 100%;
+        max-width: 100%;
       }
 
       & > *:first-child {
@@ -80,6 +82,7 @@
 
     & > * {
       flex-basis: 30%;
+      max-width: 30%;
 
       &:not(:nth-child(3n)) {
         margin-right: 4.995%;
@@ -89,6 +92,7 @@
     @media (max-width: @breakpoint-md) {
       & > * {
         flex-basis: 45%;
+        max-width: 45%;
 
         &:not(:nth-child(3n)) {
           margin-right: 0;
@@ -103,6 +107,7 @@
     @media (max-width: @breakpoint-sm) {
       & > * {
         flex-basis: 100%;
+        max-width: 100%;
 
         &:not(:nth-child(3n)) {
           margin-right: 0;
