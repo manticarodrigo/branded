@@ -1,0 +1,7 @@
+<section id="process" class="u-background-color-primary">
+  <div class="container--max-width-lg">
+    <div class="u-padding-top--lg u-padding-bottom--lg container--padding">
+      <img class="u-display-block u-margin-auto" src="/assets/svgs/process.svg" alt="Company Process" />
+    </div>
+  </div>
+</section>

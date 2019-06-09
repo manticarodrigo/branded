@@ -1,0 +1,9 @@
+{.section collection}
+  {.section mainImage}
+    <section id="hero">
+      <div class="u-line-height--none">
+        <img class="u-fullwidth" src="{assetUrl}?format=original" alt="BRANDED Hero" />
+      </div>
+    </section>
+  {.end}
+{.end}

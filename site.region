@@ -9,20 +9,7 @@
   </head>
   <body id="{squarespace.page-id}" class="u-background-color-white {squarespace.page-classes}">
     <!-- age gate -->
-    <section id="age-gate" class="age-gate">
-      <aside class="age-gate__modal">
-        <header class="age-gate__modal__header">
-          <img src="/assets/svgs/logo.svg" alt="BRANDED Age Gate Logo" />
-        </header>
-        <div class="age-gate__modal__body">
-          <h1 class="u-margin-hug u-margin-bottom u-color-white h3">Are you 21 or over?</h1>
-          <a id="age-gate-submit" class="btn btn--secondary">Yes, I&apos;m 21&#43;</a>
-        </div>
-        <footer class="age-gate__modal__footer">
-          <a href="http://google.com">No, i&apos;m not old enough.</a>
-        </footer>
-      </aside>
-    </section>
+    {@|apply age-gate.block}
 
     <!-- site navigation -->
     <squarespace:navigation navigationId="headerNav" template="header" />
@@ -30,34 +17,13 @@
     <!-- main content -->
     <main role="main">
 
-      <section id="hero">
-        <div class="u-line-height--none">
-          <img class="u-fullwidth" src="/assets/jpgs/hero.jpg" alt="Site Hero" />
-        </div>
-      </section>
+      <squarespace:query collection="{.section collection}{urlId}{.end}">
+        {@|apply hero.block}
+      </squarespace:query>
 
-      <section id="about">
-        <div class="u-background-color-white container--max-width-lg">
-          <div class="container--2col">
-            <div class="container--padding">
-              <h2 class="u-margin-hug u-color-primary h1">Same products,<br>lower prices.<br>No frills.</h2>
-            </div>
-            <div class="u-line-height--lg container--padding">
-              <p class="u-text-md">We believe the amazing benefits of cannabis should be accessible by more people. Branded was created with a no frills approach with the intention of offering the same quality cannabis products at affordable prices.</p>
-              <p class="u-text-md">Branded has everything for those seeking to get the benefits of cannabis for what it should cost.</p>
-              <a class="u-margin-top--md btn btn--lg" href="#products">Our Products</a>
-            </div>
-          </div>
-        </div>
-      </section>
+      {@|apply about.block}
 
-      <section id="process" class="u-background-color-primary">
-        <div class="container--max-width-lg">
-          <div class="u-padding-top--lg u-padding-bottom--lg container--padding">
-            <img class="u-display-block u-margin-auto" src="/assets/svgs/process.svg" alt="Company Process" />
-          </div>
-        </div>
-      </section>
+      {@|apply process.block}
 
       <section id="products">
         <div class="u-background-color-white container--max-width-lg">
@@ -75,26 +41,7 @@
         </div>
       </section>
 
-      <section id="newsletter" class="u-background-color-primary">
-        <div class="container--max-width-lg">
-          <div class="u-padding-top--lg u-padding-bottom--lg container--padding container--2col">
-            <div class="u-padding">
-              <p class="u-max-width-sm u-color-white u-font-md">THIS IS NOT A NEWSLETTER, JUST EVERYDAY VALUE. STAY UP TO DATE ON ALL BRANDED OFFERS.</p>
-            </div>
-            <div class="u-margin-auto u-padding">
-              <form class="form form--inline" data-form="newsletter">
-                <div class="u-margin-right u-flex-grow form__item">
-                  <label class="u-sr-only" for="newsletter-email">Email Address</label>
-                  <input id="newsletter-email" name="email" type="email" placeholder="Enter your email" />
-                </div>
-                <div class="form__item">
-                  <button type="submit" class="u-padding-right--md u-padding-left--md btn btn--secondary">Submit</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
+      {@|apply newsletter.block}
       
       <section id="locate">
         <div class="u-background-color-white container--max-width-lg">
@@ -111,43 +58,7 @@
         </div>
       </section>
 
-      <section id="contact">
-        <div class="u-background-color-white container--max-width-lg">
-          <div class="u-padding-top container--padding">
-            <h2 class="u-margin-bottom u-color-primary u-text-center">Contact us</h2>
-            <div class="container--max-width-sm">
-              <form class="form" data-form="contact">
-                <div class="form__item u-margin-bottom">
-                  <label for="contact-type">Inquiry type</label>
-                  <select id="contact-type" name="subject" required="required">
-                    <option selected value="general">General Inquiry</option>
-                    <option value="0">First Option</option>
-                    <option value="1">Another Option</option>
-                    <option value="2">One Last Option</option>
-                  </select>
-                </div>
-                <div class="form__item u-margin-bottom">
-                  <label for="contact-name">Your Name</label>
-                  <input id="contact-name" name="firstname" type="text" required="required">
-                </div>
-                <div class="form__item u-margin-bottom">
-                  <label for="contact-email">Email</label>
-                  <input id="contact-email" name="email" type="text" required="required">
-                </div>
-                <div class="form__item u-margin-bottom">
-                  <label for="contact-dispensary">Dispensary Name</label>
-                  <input id="contact-dispensary" name="company" type="text" required="required">
-                </div>
-                <div class="form__item u-margin-bottom">
-                  <label for="contact-message">Message</label>
-                  <textarea id="contact-message" name="message" required="required"></textarea>
-                </div>
-                <button type="submit" class="u-padding-right--md u-padding-left--md btn">Submit Inquiry</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
+      {@|apply contact.block}
     </main>
 
     <!-- site footer -->
@@ -163,9 +74,7 @@
             <squarespace:navigation navigationId="footerSocial" template="footer-social" />
           </div>
         </div>
-        <div class="u-padding u-text-center">
-          <p class="u-font-md u-color-white">© <script>document.write(new Date().getFullYear())</script> Branded. A Cannabis Company - All rights reserved.</p>
-        </div>
+        {@|apply copyright.block}
       </div>
     </footer>
 

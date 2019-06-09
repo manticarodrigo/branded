@@ -1,0 +1,14 @@
+<section id="age-gate" class="age-gate">
+  <aside class="age-gate__modal">
+    <header class="age-gate__modal__header">
+      <img src="/assets/svgs/logo.svg" alt="BRANDED Age Gate Logo" />
+    </header>
+    <div class="age-gate__modal__body">
+      <h1 class="u-margin-hug u-margin-bottom u-color-white h3">Are you 21 or over?</h1>
+      <a id="age-gate-submit" class="btn btn--secondary">Yes, I&apos;m 21&#43;</a>
+    </div>
+    <footer class="age-gate__modal__footer">
+      <a href="http://google.com">No, i&apos;m not old enough.</a>
+    </footer>
+  </aside>
+</section>

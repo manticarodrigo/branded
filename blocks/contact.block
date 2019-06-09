@@ -1,0 +1,37 @@
+<section id="contact">
+  <div class="u-background-color-white container--max-width-lg">
+    <div class="u-padding-top container--padding">
+      <h2 class="u-margin-bottom u-color-primary u-text-center">Contact us</h2>
+      <div class="container--max-width-sm">
+        <form class="form" data-form="contact">
+          <div class="form__item u-margin-bottom">
+            <label for="contact-type">Inquiry type</label>
+            <select id="contact-type" name="subject" required="required">
+              <option selected value="general">General Inquiry</option>
+              <option value="0">First Option</option>
+              <option value="1">Another Option</option>
+              <option value="2">One Last Option</option>
+            </select>
+          </div>
+          <div class="form__item u-margin-bottom">
+            <label for="contact-name">Your Name</label>
+            <input id="contact-name" name="firstname" type="text" required="required">
+          </div>
+          <div class="form__item u-margin-bottom">
+            <label for="contact-email">Email</label>
+            <input id="contact-email" name="email" type="text" required="required">
+          </div>
+          <div class="form__item u-margin-bottom">
+            <label for="contact-dispensary">Dispensary Name</label>
+            <input id="contact-dispensary" name="company" type="text" required="required">
+          </div>
+          <div class="form__item u-margin-bottom">
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" name="message" required="required"></textarea>
+          </div>
+          <button type="submit" class="u-padding-right--md u-padding-left--md btn">Submit Inquiry</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
