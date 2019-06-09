@@ -1,14 +1,3 @@
-<section id="about">
-  <div class="u-background-color-white container--max-width-lg">
-    <div class="container--2col">
-      <div class="container--padding">
-        <h2 class="u-margin-hug u-color-primary h1">Same products,<br>lower prices.<br>No frills.</h2>
-      </div>
-      <div class="u-line-height--lg container--padding">
-        <p class="u-text-md">We believe the amazing benefits of cannabis should be accessible by more people. Branded was created with a no frills approach with the intention of offering the same quality cannabis products at affordable prices.</p>
-        <p class="u-text-md">Branded has everything for those seeking to get the benefits of cannabis for what it should cost.</p>
-        <a class="u-margin-top--md btn btn--lg" href="#products">Our Products</a>
-      </div>
-    </div>
-  </div>
+<section id="about" data-content-field="main-content">
+  {squarespace.main-content}
 </section>
