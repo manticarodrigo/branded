@@ -1,0 +1,19 @@
+<div class="u-text-center container__item">
+  <!-- navigation -->
+  <ul class="site-navigation__menu site-navigation__menu--vertical">
+    {.repeated section items}
+      <li class="site-navigation__item {.section active} site-navigation__item--active{.end}">
+        <!-- collection link -->
+        {.section collection}
+          <a href="{fullUrl}">{navigationTitle}</a>
+        {.end}
+        <!-- external link -->
+        {.section externalLink}
+          <a href="{url}"{.section newWindow} target="_blank"{.end}>
+            {title}
+          </a>
+        {.end}
+      </li>
+    {.end}
+  </ul>
+</div>

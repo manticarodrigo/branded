@@ -151,7 +151,23 @@
     </main>
 
     <!-- site footer -->
-    <squarespace:navigation navigationId="footerNav" template="footer" />
+    <footer class="u-background-color-primary">
+      <div class="container--max-width-lg">
+        <div class="u-padding-top--lg">
+          <div class="u-padding u-text-center">
+            <img src="/assets/svgs/logo.svg" alt="BRANDED Footer Logo" />
+          </div>
+          <div class="u-color-white container--3col container--align-items-center">
+            <squarespace:navigation navigationId="footerNav" template="footer-nav" />
+            <squarespace:navigation navigationId="footerContact" template="footer-contact" />
+            <squarespace:navigation navigationId="footerSocial" template="footer-social" />
+          </div>
+        </div>
+        <div class="u-padding u-text-center">
+          <p class="u-font-md u-color-white">© <script>document.write(new Date().getFullYear())</script> Branded. A Cannabis Company - All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
 
     <!-- combo and minify scripts when not logged in -->
     <squarespace:script src="site.js" />
