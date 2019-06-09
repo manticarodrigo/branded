@@ -5,7 +5,7 @@
       <h2 class="u-margin-bottom u-color-primary">Our Products</h2>
       <div class="container--3col">
           {.repeated section items}
-            <article class="container__item container__item--product" data-item-id="{item.id}">
+            <article class="container__item container__item--product" data-item-id="{id}">
               <figure class="u-margin-hug">
                 {.var @firstImg items.0}
                 {.if @firstImg}
