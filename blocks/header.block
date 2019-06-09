@@ -1,6 +1,6 @@
 <header class="u-background-color-primary">
-  <nav role="navigation" class="u-padding u-padding-right--md u-padding-left--md site-navigation container--max-width-lg">
-    <div class="container">
+  <div class="u-padding u-padding-right--md u-padding-left--md site-navigation container--max-width-lg">
+    <nav role="navigation" class="container">
       <!-- mobile activator -->
       <input type="checkbox" />
       
@@ -26,7 +26,7 @@
           </li>
         {.end}
       </ul>
-    </div>
+    </nav>
 
     <!-- logo & tagline -->
     {.section website}
@@ -35,5 +35,5 @@
       </h1>
       <p class="u-color-white site-navigation__tagline" data-content-field="site-tagline">{siteTagLine}</p>
     {.end}
-  </nav>
+  </div>
 </header>
