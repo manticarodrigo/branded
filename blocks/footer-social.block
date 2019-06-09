@@ -1,10 +1,12 @@
-<ul class="u-margin-hug-top u-list-unstyled u-text-center container__item">
-  {.repeated section items}
-    <!-- external link -->
-    {.section externalLink}
-      <li>
-        <p><a href="{url}"{.section newWindow} target="_blank"{.end}>{title}</a></p>
-      </li>
+<nav class="u-text-center container__item" data-content-field="navigation-footerSocial">
+  <ul class="u-margin-hug-top u-list-unstyled">
+    {.repeated section items}
+      <!-- external link -->
+      {.section externalLink}
+        <li>
+          <p><a href="{url}"{.section newWindow} target="_blank"{.end}>{title}</a></p>
+        </li>
+      {.end}
     {.end}
-  {.end}
-</ul>
+  </ul>
+</nav>

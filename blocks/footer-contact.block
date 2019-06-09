@@ -1,17 +1,20 @@
-<ul class="u-margin-hug-top u-list-unstyled u-text-center container__item">
-  {.repeated section items}
-    <!-- external link -->
-    {.section externalLink}
-      <li>
-        <h3 class="h4">{title}</h3>
-        <p>
-          <a href="{url}">
-            <script type="text/javascript">
-              document.write({url|json}.replace('mailto:', ''))
-            </script>
-          </a>
-        </p>
-      </li>
+<nav class="u-text-center container__item" data-content-field="navigation-footerContact">
+  <!-- navigation -->
+  <ul class="u-margin-hug-top u-list-unstyled">
+    {.repeated section items}
+      <!-- external link -->
+      {.section externalLink}
+        <li>
+          <h3 class="h4">{title}</h3>
+          <p>
+            <a href="{url}">
+              <script type="text/javascript">
+                document.write({url|json}.replace('mailto:', ''))
+              </script>
+            </a>
+          </p>
+        </li>
+      {.end}
     {.end}
-  {.end}
-</ul>
+  </ul>
+</nav>

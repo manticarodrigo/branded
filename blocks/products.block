@@ -1,0 +1,38 @@
+<section id="products" data-collection-id="{collection.id}">
+  <div class="u-background-color-white container--max-width-lg">
+    <div class="container--padding u-text-center">
+      <img src="/assets/svgs/ca.svg" alt="CA Icon" />
+      <h2 class="u-margin-bottom u-color-primary">Our Products</h2>
+      <div class="container--3col">
+          {.repeated section items}
+            <article class="container__item container__item--product" data-item-id="{item.id}">
+              <figure class="u-margin-hug">
+                {.var @firstImg items.0}
+                {.if @firstImg}
+                  <img class="u-fullwidth" src={@firstImg.assetUrl} alt="{title}"/>
+                {.end}
+                {.var @secondImg items.1}
+                {.if @secondImg}
+                  <img class="u-fullwidth rollover" src={@secondImg.assetUrl} alt="{title} Alternate" />
+                {.end}
+                <figcaption>
+                  <h3 class="h4">{title}</h3>
+                </figcaption>
+              </figure>
+              {.if variants.0.attributes.Strain}
+                <dl>
+                {.repeated section variants}
+                  {.var @strain attributes.Strain}
+                  {.var @breed attributes.Breed}
+                  <dt class="u-font-md">{@strain}{.if @breed} &vert;{.end}</dt>{.if @breed}<dd><i class="u-text-sm">{@breed}</i></dd>{.end}
+                {.end}
+                </dl>
+              {.or}
+                <p class="u-text-uppercase"><span class="u-font-md">Coming Soon</span></p>
+              {.end}
+            </article>
+          {.end}
+      </div>
+    </div>
+  </div>
+</section>

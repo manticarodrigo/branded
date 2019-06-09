@@ -1,4 +1,4 @@
-<div class="u-text-center container__item">
+<nav class="u-text-center container__item" data-content-field="navigation-footerNav">
   <!-- navigation -->
   <ul class="site-navigation__menu site-navigation__menu--vertical">
     {.repeated section items}
@@ -16,4 +16,4 @@
       </li>
     {.end}
   </ul>
-</div>
+</nav>

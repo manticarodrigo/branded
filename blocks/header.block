@@ -1,6 +1,6 @@
 <header class="u-background-color-primary">
   <div class="u-padding u-padding-right--md u-padding-left--md site-navigation container--max-width-lg">
-    <nav role="navigation" class="container">
+    <nav role="navigation" class="container" data-content-field="navigation-headerNav">
       <!-- mobile activator -->
       <label class="u-sr-only" for="mobile-activator">Navigation Toggle</label>
       <input id="mobile-activator" type="checkbox" />
