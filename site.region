@@ -19,8 +19,11 @@
 
       <squarespace:query collection="{.section collection}{urlId}{.end}">
         {@|apply hero.block}
-        {@|apply about.block}
       </squarespace:query>
+
+      <section id="about" data-content-field="main-content">
+        {squarespace.main-content}
+      </section>
 
       {@|apply process.block}
 
