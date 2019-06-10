@@ -3,16 +3,18 @@
     <div class="container--padding">
       <h2 class="u-margin-bottom u-color-primary u-text-center">{collection.navigationTitle}</h2>
       <div class="container--3col">
+          <script type="text/javascript">
+            function getImagePath() {
+              var path = '/assets/svgs/';
+              var num = Math.floor(Math.random() * 3);
+              var img = 'building-' + (num + 1) + '.svg';
+              return path + img;
+            }
+          </script>
           {.repeated section items}
             <article class="u-text-center container__item" data-item-id="{id}">
               {.section location}
-                <script type="text/javascript">
-                  var path = '/assets/svgs/';
-                  var num = Math.floor(Math.random() * 3);
-                  var img = 'building-' + (num + 1) + '.svg';
-                  var imgStr = '<img src="' + path + img + '" alt="{addressTitle}">';
-                  document.write(imgStr);
-                </script>
+                <img src="/assets/svgs/building-1.svg" alt="{addressTitle}" onload="this.onload=null; this.src=getImagePath();">
                 <h3 class="h4">{addressTitle}</h3>
                 <p>{addressLine1}</p>
                 <p>{addressLine2}</p>
