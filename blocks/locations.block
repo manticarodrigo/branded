@@ -5,16 +5,18 @@
       <div class="container--3col">
           {.repeated section items}
             <article class="u-text-center container__item" data-item-id="{id}">
-              <script type="text/javascript">
-                var path = '/assets/svgs/';
-                var num = Math.floor(Math.random() * 3);
-                var img = 'building-' + (num + 1) + '.svg';
-                var imgStr = '<img src="' + path + img + '" alt = "">';
-                document.write(imgStr); document.close();
-              </script>
-              <h3 class="h4">{location.addressTitle}</h3>
-              <p>{location.addressLine1}</p>
-              <p>{location.addressLine2}</p>
+              {.section location}
+                <script type="text/javascript">
+                  var path = '/assets/svgs/';
+                  var num = Math.floor(Math.random() * 3);
+                  var img = 'building-' + (num + 1) + '.svg';
+                  var imgStr = '<img src="' + path + img + '" alt="{addressTitle}">';
+                  document.write(imgStr);
+                </script>
+                <h3 class="h4">{addressTitle}</h3>
+                <p>{addressLine1}</p>
+                <p>{addressLine2}</p>
+              {.end}
             </article>
           {.end}
       </div>

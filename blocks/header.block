@@ -34,7 +34,7 @@
       <h1 class="u-margin-hug u-line-height--none site-navigation__logo" data-content-field="site-title">
         <a href="/"><img src="/assets/svgs/logo.svg" alt="{siteTitle}" /></a>
       </h1>
-      <p class="u-color-white site-navigation__tagline" data-content-field="site-tagline">{siteTagLine}</p>
+      <p class="u-color-white site-navigation__tagline" data-content-field="site-title">{siteTagLine}</p>
     {.end}
   </div>
 </header>
