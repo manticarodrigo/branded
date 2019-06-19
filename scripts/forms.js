@@ -18,9 +18,9 @@
   var contactFormElement = document.querySelector('[data-form=contact]');
 
   function addFormSubmissionListener(formElement, callback) {
-    if (formElement.addEventListener) {
+    if (formElement && formElement.addEventListener) {
       formElement.addEventListener('submit', callback, false); // modern browsers
-    } else if (newsletterForm.attachEvent) {
+    } else if (formElement && formElement.attachEvent) {
       formElement.attachEvent('onsubmit', callback); // old IE
     }
   }

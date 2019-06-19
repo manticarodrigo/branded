@@ -1,0 +1,4 @@
+<!-- site hero -->
+<squarespace:query collection="{.section collection}{urlId}{.end}">
+  {@|apply hero.block}
+</squarespace:query>

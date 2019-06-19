@@ -8,9 +8,6 @@
             <label for="contact-type">Inquiry type</label>
             <select id="contact-type" name="subject" required="required">
               <option selected value="general">General Inquiry</option>
-              <option value="0">First Option</option>
-              <option value="1">Another Option</option>
-              <option value="2">One Last Option</option>
             </select>
           </div>
           <div class="form__item u-margin-bottom">

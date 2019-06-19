@@ -1,0 +1,27 @@
+    <!-- site footer -->
+    <footer class="u-background-color-primary">
+      <div class="container--max-width-lg">
+        <div class="u-padding-top--lg">
+          <div class="u-padding u-text-center">
+            <img src="/assets/svgs/logo.svg" alt="BRANDED Footer Logo" />
+          </div>
+          <div class="u-color-white container--3col container--align-items-center">
+            <squarespace:navigation navigationId="footerNav" template="footer-nav" />
+            <squarespace:navigation navigationId="footerContact" template="footer-contact" />
+            <squarespace:navigation navigationId="footerSocial" template="footer-social" />
+          </div>
+        </div>
+        {@|apply copyright.block}
+      </div>
+    </footer>
+
+    <!-- custom scripts -->
+    <squarespace:script src="site.js" />
+    <squarespace:script src="forms.js" />
+    <squarespace:script src="verification.js" />
+
+    <!-- other scripts, and footer code injection -->
+    {squarespace-footers}
+
+  </body>
+</html>

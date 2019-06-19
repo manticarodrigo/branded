@@ -1,0 +1,13 @@
+{@|apply process.block}
+
+<squarespace:query collection="products">
+  {@|apply products.block}
+</squarespace:query>
+
+{@|apply newsletter.block}
+
+<squarespace:query collection="locations">
+  {@|apply locations.block}
+</squarespace:query>
+
+{@|apply contact.block}
