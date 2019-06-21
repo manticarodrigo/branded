@@ -20,7 +20,7 @@
           </div>
           <div class="form__item u-margin-bottom">
             <label for="contact-dispensary">Dispensary Name</label>
-            <input id="contact-dispensary" name="company" type="text" required="required">
+            <input id="contact-dispensary" name="company" type="text">
           </div>
           <div class="form__item u-margin-bottom">
             <label for="contact-message">Message</label>

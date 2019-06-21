@@ -57,12 +57,24 @@ input {
       }
     }
 
+    label[for=contact-dispensary] {
+
+      &::after {
+        content: '';
+      }
+    }
+
     input[type=text],
     select,
     textarea {   
       -webkit-appearance: none;
       -moz-appearance: none;
       appearance: none;
+
+      &:required + label::after {
+        content: '*';
+        color: @color-primary;
+      }
     }
 
     input,
